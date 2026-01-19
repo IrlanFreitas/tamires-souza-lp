@@ -17,6 +17,8 @@ body {
   color: #1a1a1a;
   line-height: 1.6;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Variáveis de Design */
@@ -39,6 +41,15 @@ body {
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --branco: #FCFCFC;
+  --cinzaClaro: #D8D6D6;
+  --azul: #212D4F;
+  --azulApagado: #747C8F;
+  --laranja: #BE7352;
+
+  --fontTitulos: 'Merriweather';
+  --fontCorpo: 'Open Sans';
 }
 
 /* Tipografia */
@@ -50,7 +61,8 @@ h5,
 h6 {
   font-weight: 700;
   line-height: 1.2;
-  color: var(--text-primary);
+  color: var(--azul);
+  font-family: var(--fontTitulos);
 }
 
 h1 {
@@ -66,19 +78,14 @@ h3 {
 }
 
 p {
-  color: var(--text-secondary);
-  line-height: 1.6;
+  // color: var(--text-secondary);
+  // line-height: 1.6;
 }
 
 /* Links */
 a {
-  color: var(--primary);
   text-decoration: none;
-  transition: var(--transition);
-
-  &:hover {
-    color: var(--primary-dark);
-  }
+  font-family: var(--fontTitulos);
 }
 
 /* Botões */

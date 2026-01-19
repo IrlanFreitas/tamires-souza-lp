@@ -1,12 +1,12 @@
 .hero {
   padding: 60px 20px;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #FCFCFC 0%, #D8D6D6 100%);
   
   .container {
     max-width: 1200px;
+    position: relative;
+    height: 100vh;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 40px;
     align-items: center;
 
@@ -18,9 +18,10 @@
 
   .content {
     h1 {
-      font-size: clamp(28px, 5vw, 48px);
+      // font-size: clamp(28px, 5vw, 48px);
+      font-size: 2.25rem;
       line-height: 1.2;
-      color: #1a1a1a;
+      // color: #1a1a1a;
       margin-bottom: 20px;
       font-weight: 700;
     }
@@ -79,7 +80,9 @@
 
   .imageContainer {
     position: relative;
-    height: 400px;
+    height: 650px;
+    width: 500px;
+    margin: auto;
 
     @media (max-width: 768px) {
       height: 300px;

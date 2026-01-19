@@ -1,0 +1,110 @@
+.container {
+  background-color: var(--branco);
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // display: flex;
+  // flex-direction: row;
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  width: 90%;
+  margin: auto;
+  border-radius: 30px;
+  height: 75px;
+  color: var(--azul);
+  align-items: center;
+  // justify-content: space-around;
+  box-shadow: 5px 5px 10px 0px #00000053;
+  z-index: 1000;
+  /* Ensures it stays on top of other elements */
+  box-sizing: border-box;
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--azul);
+  }
+
+  & ul {
+    list-style: none;
+    /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+  }
+
+  & ul li a {
+    // color: #333;
+    color: var(--azul);
+    text-decoration: none;
+    /* Remove default underline */
+    padding: 10px 20px;
+    display: block;
+    /* Make the entire area clickable */
+    position: relative;
+    /* Crucial for positioning the line */
+    overflow: hidden;
+    /* Ensures the line animation is contained */
+  }
+
+  & ul li a:hover {
+    font-weight: bold;
+  }
+
+  /* Create the line using a pseudo-element */
+  & ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* Position the line at the top */
+    left: 0;
+    width: 100%;
+    height: 3px;
+    /* Thickness of the line */
+    background-color: var(--azul);
+    /* Color of the line */
+    transform: scaleX(0);
+    /* Initially hide the line */
+    transform-origin: left;
+    /* Animation starts from the left */
+    transition: transform 0.3s ease;
+    /* Smooth transition for the animation */
+  }
+
+  /* Animate the line on hover */
+  & ul li a:hover::after {
+    content: "";
+    transform: scaleX(1);
+    font-weight: bold;
+    /* Expand the line to full width */
+  }
+
+  .icones {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+
+    img {
+      cursor: pointer;
+    }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-right: 0;
+    // flex-direction: row;
+  }
+}

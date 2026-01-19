@@ -12,9 +12,9 @@ const nextConfig = {
   },
   
   // ISR e SSG
-  experimental: {
-    isrMemoryCacheSize: 50 * 1024 * 1024, // 50MB
-  },
+  // experimental: {
+  //   isrMemoryCacheSize: 50 * 1024 * 1024, // 50MB
+  // },
 
   // Headers customizados para performance
   async headers() {

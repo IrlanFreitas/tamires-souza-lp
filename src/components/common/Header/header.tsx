@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import stylesGlobals from '../../../styles/globals.scss'; 
+import '../../../styles/globals.scss'; 
 import styles from "./header.module.scss";
 
 const Header = () => {
   return (
-    <nav className={styles.container}>
+    <nav className={`animeTop ${styles.container}`}>
       <span className={styles.logo}>
         <Image
           src="/images/logos/LOGO-Tamires-Souza.svg"

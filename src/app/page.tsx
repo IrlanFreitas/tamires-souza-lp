@@ -7,13 +7,10 @@ import styles from "./page.module.scss";
 
 export default function Page() {
   return (
-    <div className={styles.body}>
+    <>
       <Header />
-      <div className={styles.content}>
       <HeroSection />
       {/* <ServicesSection /> */}
-      </div>
-
-    </div>
+    </>
   );
 }

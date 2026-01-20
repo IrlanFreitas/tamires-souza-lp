@@ -1,34 +1,51 @@
-"use client";
-
 import Image from "next/image";
 import styles from "./hero.module.scss";
-
-import Link from "next/link";
-import Header from "../common/Header/header";
+import WhatsApp from "../../../public/images/logos/whatsapp.svg";
+import '../../styles/globals.scss'; 
 
 export function HeroSection() {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        
-        {/* <div className={styles.content}>
+        <div className={`animeLeft ${styles.content}`}>
           <h1 className={styles.title}>
             Tamires Souza - Consultora de Marketing para Hospitais e Indústria
             Farmacêutica
           </h1>
           <p className={styles.subtitle}>
-            Estratégias de marketing personalizadas para profissionais e
-            clínicas de saúde. Aumente seus pacientes, fortaleça sua marca e
-            construa confiança online.
+            Oferecendo soluções personalizadas como:
           </p>
-          <div className={styles.cta}>
-            <button className={styles.ctaPrimary}>
-              Agende uma Consultoria
-            </button>
-            <button className={styles.ctaSecondary}>Saiba Mais</button>
-          </div>
+          <ul className={styles.solutionsList}>
+            <li>Definição de posicionamento</li>
+            <li>Diagnóstico de marketing</li>
+            <li>
+              Planejamento de conteúdo, mentorias práticas para médicos,
+              clínicas, hospitais e empresas de saúde
+            </li>
+            <li>
+              Atendimento online e presencial no estado de SP nas seguintes
+              cidades: Bragança Paulista, Atibaia, Socorro, Campinas, Jundiaí,
+              Amparo
+            </li>
+          </ul>
+
+          <button className={styles.ctaPrimary}>
+            Entre em contato
+            {/* <Image
+              src="/images/logos/whatsapp.svg"
+              alt="Icone WhatsApp"
+              className={styles.iconeWhatsapp}
+              width={30}
+              height={30}
+              color="white"
+              priority
+              quality={85}
+            /> */}
+            <WhatsApp fill="white" className={styles.iconeWhatsapp} />
+          </button>
         </div>
-        <div className={styles.imageContainer}>
+
+        <div className={`animeRight ${styles.imageContainer}`}>
           <Image
             src="/images/perfil.jpeg"
             alt="Tamires Souza"
@@ -37,7 +54,7 @@ export function HeroSection() {
             priority
             quality={85}
           />
-        </div> */}
+        </div>
       </div>
     </section>
   );

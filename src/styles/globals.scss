@@ -133,12 +133,26 @@ img {
   animation: animeRight 0.5s forwards;
 }
 
+.animeTop {
+  opacity: 0;
+  transform: translateY(+50px);
+  animation: animeTop 0.5s forwards;
+}
+
 @keyframes animeLeft {
   to {
     opacity: 1;
     transform: initial;
   }
 }
+
+@keyframes animeTop {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
 
 @keyframes animeRight {
   to {

@@ -7,8 +7,8 @@ import styles from "./header.module.scss";
 
 const Header = () => {
   return (
-    <nav className={`animeTop ${styles.container}`}>
-      <span className={styles.logo}>
+    <nav className={`${styles.container}`}>
+      <span className={styles.logo} id="#">
         <Image
           src="/images/logos/LOGO-Tamires-Souza.svg"
           alt="Tamires Souza"
@@ -24,16 +24,16 @@ const Header = () => {
 
       <ul className={styles.nav}>
         <li>
-          <Link href="/resultados">Resultados</Link>
+          <Link href="#resultados">Resultados</Link>
         </li>
         <li>
-          <Link href="/processo">Processo</Link>
+          <Link href="#processo">Processo</Link>
         </li>
         <li>
-          <Link href="/servicos">Serviços</Link>
+          <Link href="#servicos">Serviços</Link>
         </li>
         <li>
-          <Link href="/faq">Perguntas Frequentes</Link>
+          <Link href="#faq">Perguntas Frequentes</Link>
         </li>
       </ul>
 

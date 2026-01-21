@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Open_Sans, Merriweather } from "next/font/google";
 import "@styles/globals.scss";
 
-const inter = Inter({
+const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
+});
+
+const merriweather = Merriweather({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-merriweather",
 });
 
 export const metadata: Metadata = {
@@ -55,10 +63,12 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ffffff" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/logos/LOGO-Tamires-Souza-Branco.svg" />
         <link rel="canonical" href="https://tamires-souza-lp.com" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={`${openSans.variable} ${merriweather.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }

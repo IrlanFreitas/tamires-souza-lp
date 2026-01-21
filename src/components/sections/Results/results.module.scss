@@ -1,0 +1,51 @@
+.results {
+  height: 550px;
+  width: 100%;
+  background-color: #013E7F;
+  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.25) inset;
+  display: flex;
+  margin: 0 auto;
+
+  .container {
+    width: 1200px;
+    padding: 60px 20px;
+    margin: 0 auto;
+
+    h2 {
+      color: var(--branco);
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .empresas {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+  }
+
+  .linha {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: var(--azulApagado);
+    height: 3px;
+    opacity: .50;
+    /* Adjust thickness as needed */
+    // background-color: #ff0000;
+    /* Red color, use any valid color value */
+    border: none;
+    /* Removes default border/shading */
+  }
+
+  .numeros {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    font-size: 1.3rem;
+    align-items: center;
+    font-family: var(--fontTitulos);
+    padding-top: 80px;
+    width: 80%;
+    margin: auto;
+  }
+}

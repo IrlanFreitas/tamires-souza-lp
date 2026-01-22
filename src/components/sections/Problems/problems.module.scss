@@ -1,0 +1,49 @@
+.problems {
+  height: 100vh;
+  background: linear-gradient(135deg, #FCFCFC 0%, #D8D6D6 100%);
+  color: var(--azul);
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+
+    .titulo {
+      text-align: center;
+      font-size: 1.8rem;
+      padding-top: 50px;
+      font-weight: normal;
+      padding-bottom: 20px;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr
+  }
+
+  .linha {
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: var(--azulApagado);
+    height: 3px;
+    opacity: .50;
+  }
+
+  .problemsList {
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .rodape {
+    text-align: center;
+    font-weight: lighter;
+  }
+}

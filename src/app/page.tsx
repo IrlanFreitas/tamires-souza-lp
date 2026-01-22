@@ -1,6 +1,7 @@
 import Header from "@/components/common/Header/header";
 import { HeroSection } from "@/components/sections/Hero/hero";
 import  ResultsSection  from "@/components/sections/Results/results";
+import  ProblemsSection  from "@/components/sections/Problems/problems";
 
 export default function Page() {
   return (
@@ -8,6 +9,7 @@ export default function Page() {
       <Header />
       <HeroSection />
       <ResultsSection />
+      <ProblemsSection />
     </>
   );
 }

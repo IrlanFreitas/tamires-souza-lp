@@ -54,18 +54,36 @@ const ResultsSection = () => {
         <hr className={styles.linha} />
         <div className={styles.numeros}>
           <div className={styles.indicador}>
-            4 <br /> hospitais
+            <span className={styles.numero}>4</span> hospitais
           </div>
           <div className={styles.indicador}>
-            10+ <br />
+            <span className={styles.numero}>
+              10
+              <Image
+                src="/images/logos/plus-solid-orange.svg"
+                alt="Icone de Whatsapp"
+                width={40}
+                height={40}
+                quality={100}
+              />
+            </span>
             clínicas
           </div>
           <div className={styles.indicador}>
-            10 <br />
+            <span className={styles.numero}>10</span>
             farmacêutica
           </div>
           <div className={styles.indicador}>
-            100+ <br />
+            <span className={styles.numero}>
+              100
+              <Image
+                src="/images/logos/plus-solid-orange.svg"
+                alt="Icone de Whatsapp"
+                width={40}
+                height={40}
+                quality={100}
+              />
+            </span>
             profissionais de saúde
           </div>
         </div>

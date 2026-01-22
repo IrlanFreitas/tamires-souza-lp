@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans, Merriweather } from "next/font/google";
 import "@styles/globals.scss";
+import { Analytics } from "@vercel/analytics/next";
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -68,6 +69,7 @@ export default function RootLayout({
       </head>
       <body className={`${openSans.variable} ${merriweather.variable}`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );

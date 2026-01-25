@@ -64,6 +64,7 @@ const ProblemsSection = () => {
             width={10}
             height={10}
             quality={100}
+            className={styles.divisor}
           />
           <div className={styles.sessaoDireita}>
             <span className={styles.tituloSessao}>

@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-around;
     margin: 50px auto;
+    flex-wrap: wrap;
   }
 
   .linha {
@@ -31,11 +32,7 @@
     background-color: var(--azulApagado);
     height: 3px;
     opacity: .50;
-    /* Adjust thickness as needed */
-    // background-color: #ff0000;
-    /* Red color, use any valid color value */
     border: none;
-    /* Removes default border/shading */
   }
 
   .numeros {
@@ -47,6 +44,13 @@
     padding-top: 80px;
     width: 80%;
     margin: auto;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 50%);
+      padding-top: 40px;
+      padding-bottom: 40px;
+      gap: 10px;
+    }
   }
 
   .numero {

@@ -14,8 +14,8 @@ const ProblemsSection = () => {
         <hr className={styles.linha} />
         <div className={styles.content}>
           <div>
-            <div>
-              <span style={{ display: "flex" }}>
+            <div className={styles.sessao}>
+              <span className={styles.tituloSessao}>
                 <Image
                   src="/images/logos/text_snippet.svg"
                   alt="Icone de Whatsapp"
@@ -32,11 +32,11 @@ const ProblemsSection = () => {
                 entre áreas.
               </p>
             </div>
-            <div>
-              <span style={{ display: "flex" }}>
+            <div className={styles.sessao}>
+              <span className={styles.tituloSessao}>
                 <Image
                   src="/images/logos/monitor_heart_colored.svg"
-                  alt="Icone de Whatsapp"
+                  alt="Icone de Diagnóstico"
                   width={30}
                   height={30}
                   quality={100}
@@ -52,7 +52,6 @@ const ProblemsSection = () => {
                 institucionais.
               </p>
               <p>
-                {" "}
                 ⁠A ausência de direção clara faz com que exista muita execução,
                 mas pouca coerência. O problema não é a falta de ação, é o
                 excesso de ação sem alinhamento e sem liderança na comunicação.
@@ -61,31 +60,73 @@ const ProblemsSection = () => {
           </div>
           <Image
             src="/images/logos/divisor.svg"
-            alt="Icone de Whatsapp"
+            alt="Icone divisor de conteúdo"
             width={10}
             height={10}
             quality={100}
           />
-          <div>
-            <span style={{ display: "flex" }}>
+          <div className={styles.sessaoDireita}>
+            <span className={styles.tituloSessao}>
               <Image
                 src="/images/logos/report.svg"
-                alt="Icone de Whatsapp"
+                alt="Icone de Problemas"
                 width={30}
                 height={30}
                 quality={100}
               />
               <h3>Principais problemas</h3>
             </span>
-            
+
             <ul className={styles.problemsList}>
-              <li>Cada área entende a estratégia de forma diferente</li>
               <li>
+                <Image
+                  src="/images/logos/close_red.svg"
+                  alt="Icone de Problemas"
+                  width={30}
+                  height={30}
+                  quality={100}
+                />
+                Cada área entende a estratégia de forma diferente
+              </li>
+              <li>
+                <Image
+                  src="/images/logos/close_red.svg"
+                  alt="Icone de Problemas"
+                  width={30}
+                  height={30}
+                  quality={100}
+                />
                 O marketing executa sem clareza de objetivos institucionais
               </li>
-              <li>As áreas se contradizem e geram ruído na comunicação</li>
-              <li>Decisões são tomadas de forma desconectada do todo</li>
               <li>
+                <Image
+                  src="/images/logos/close_red.svg"
+                  alt="Icone de Problemas"
+                  width={30}
+                  height={30}
+                  quality={100}
+                />
+                As áreas se contradizem e geram ruído na comunicação
+              </li>
+              <li>
+                {" "}
+                <Image
+                  src="/images/logos/close_red.svg"
+                  alt="Icone de Problemas"
+                  width={30}
+                  height={30}
+                  quality={100}
+                />
+                Decisões são tomadas de forma desconectada do todo
+              </li>
+              <li>
+                <Image
+                  src="/images/logos/close_red.svg"
+                  alt="Icone de Problemas"
+                  width={30}
+                  height={30}
+                  quality={100}
+                />
                 Os resultados se tornam inconsistentes e difíceis de sustentar
               </li>
             </ul>

@@ -7,6 +7,53 @@ const ResultsSection = () => {
     <section className={styles.results} id="resultados">
       <div className={styles.container}>
         <h2>Gerei resultados para as seguintes empresas</h2>
+
+        {/* <div className={styles.slider}>
+          <div className={styles.slideTrack}>
+            <Image
+              src="/images/empresas/hyperpharma-logo.png"
+              alt="Icone de Whatsapp"
+              width={100}
+              height={100}
+              quality={100}
+            />
+            <Image
+              src="/images/empresas/neosaldina-logo.png"
+              alt="Icone de Whatsapp"
+              width={100}
+              height={100}
+              quality={100}
+            />
+            <Image
+              src="/images/empresas/buscopan-logo.png"
+              alt="Icone de Whatsapp"
+              width={100}
+              height={100}
+              quality={100}
+            />
+            <Image
+              src="/images/empresas/mantercorp-logo.png"
+              alt="Icone de Whatsapp"
+              width={100}
+              height={100}
+              quality={100}
+            />
+            <Image
+              src="/images/empresas/benegrip-logo.png"
+              alt="Icone de Whatsapp"
+              width={100}
+              height={100}
+              quality={100}
+            />
+            <Image
+              src="/images/empresas/tamarine-logo.png"
+              alt="Icone de Whatsapp"
+              width={100}
+              height={100}
+              quality={100}
+            />
+          </div>
+        </div> */}
         <div className={styles.empresas}>
           <Image
             src="/images/empresas/hyperpharma-logo.png"

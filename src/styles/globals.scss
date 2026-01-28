@@ -45,6 +45,7 @@ body {
   --branco: #FCFCFC;
   --cinzaClaro: #D8D6D6;
   --azul: #212D4F;
+  --azulPerolado: #013E7F;
   --azulApagado: #747C8F;
   --laranja: #BE7352;
 
@@ -60,7 +61,7 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
-  color: var(--azul);
+  // color: var(--azul);
   font-family: var(--fontTitulos);
 }
 

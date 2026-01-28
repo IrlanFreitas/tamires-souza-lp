@@ -19,6 +19,14 @@
   opacity: .75;
   font-family: var(--font-merriweather);
 
+
+  @media (max-width: 40rem) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .85;
+  }
+
   p {
     font-size: 1.5rem;
   }
@@ -88,6 +96,10 @@
     img {
       cursor: pointer;
     }
+
+    @media (max-width: 40rem) {
+      display: none;
+    }
   }
 
   .logo {
@@ -95,6 +107,10 @@
     align-items: center;
     gap: 20px;
     margin-left: 20px;
+
+    @media (max-width: 40rem) {
+      margin-left: 0;
+    }
   }
 
   .nav {
@@ -103,6 +119,85 @@
     gap: 15px;
     list-style: none;
     margin-right: 0;
-    // flex-direction: row;
+
+    @media (max-width: 40rem) {
+      display: block;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      padding: 1rem;
+      background-color: white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+      border-radius: .2rem;
+      transform: translateX(-10px);
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+
+  .mobileButton {
+    background: #eee;
+    border-radius: .2rem;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    transition: .2s;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .mobileButton::after {
+    content: '';
+    display: block;
+    width: 1.2rem;
+    height: 2px;
+    background: currentColor;
+    border-radius: 2px;
+    box-shadow: 0 6px currentColor, 0 -6px currentColor;
+    transition: .1s;
+  }
+
+  .mobileButton:hover,
+  .mobileButton:focus,
+  .mobileButtonActive {
+    color: var(--azul);
+    outline: none;
+    background: white;
+    box-shadow: 0 0 3px var(--azulApagado);;
+    border-color: var(--azul);
+  }
+
+  .mobileButtonActive::after {
+    content: "";
+    transform: rotate(-90deg);
+    height: 4px;
+    width: 4px;
+    box-shadow: 0 8px currentColor, 0 -8px currentColor;
+  }
+
+  .navMobile {
+    display: block;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    border-radius: .2rem;
+    transform: translateX(-10px);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navMobileActive {
+    transition: .3s;
+    transform: initial;
+    opacity: 1;
+    z-index: 100;
+    pointer-events: initial;
+    box-shadow: 5px 5px 10px 0px #00000053;
   }
 }

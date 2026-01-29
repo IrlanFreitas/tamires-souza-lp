@@ -11,7 +11,7 @@ import useMedia from "@/hooks/useMedia";
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
-  const mobile = useMedia("(max-width: 40rem)");
+  const mobile = useMedia("(max-width: 48rem)");
 
   return (
     <>

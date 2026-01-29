@@ -26,5 +26,68 @@
       font-size: 1.5rem;
       margin-bottom: 20px;
     }
+
+    &Metodo {
+      @extend .container;
+    }
+
+    &Resultados {
+      @extend .container;
+    }
+  }
+
+  .metodo {
+    margin-top: 50px;
+  }
+
+  .headerItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .numeroItem {
+    color: var(--laranja);
+    font-size: 1.5rem;
+    font-family: var(--fontTitulos);
+  }
+
+  .descricaoItem {
+    font-family: var(--fontCorpo);
+  }
+
+  .linhaItem {
+    opacity: .75;
+    height: 3px;
+    color: var(--azulApagado);
+    margin: 20px auto;
+  }
+
+  .resultados {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 16%);
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .resultadoIcon {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .resultadoCard {
+    border-radius: 20px;
+    background-color: var(--branco);
+    color: var(--azul);
+    display: grid;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    text-align: center;
+    height: 250px;
+    box-shadow: 5px 5px 10px 0px #00000053;
   }
 }

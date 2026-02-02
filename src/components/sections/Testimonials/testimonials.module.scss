@@ -1,71 +1,93 @@
-.services {
-  padding: 80px 20px;
-  background: #ffffff;
+.testimonials {
+  background-color: var(--cinzaClaro);
 
   .container {
     max-width: 1200px;
+    padding: 60px 20px;
     margin: 0 auto;
   }
 
-  .header {
+  h2 {
+    color: var(--azul);
     text-align: center;
-    margin-bottom: 60px;
-
-    h2 {
-      font-size: clamp(28px, 5vw, 42px);
-      color: #1a1a1a;
-      margin-bottom: 15px;
-      font-weight: 700;
-    }
-
-    p {
-      font-size: 18px;
-      color: #666;
-      max-width: 600px;
-      margin: 0 auto;
-    }
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+  .linha {
+    max-width: 350px;
+    margin: 0 auto;
+    background-color: var(--azulApagado);
+    height: 3px;
+    opacity: .50;
+    border: none;
+  }
 
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      gap: 20px;
-    }
+  .botao {
+    width: 220px;
+    height: 70px;
+    margin: auto;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-family: var(--fontTitulos);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px 0px #00000053;
+  }
+
+  .botao:hover {
+    background-color: var(--branco);
+    color: var(--laranja);
+    transform: scale(110%);
+  }
+
+  .icon {
+    fill: var(--laranja);
+    stroke: var(--laranja);
+    ;
+  }
+
+  .icon:hover {
+    fill: var(--branco);
+    stroke: var(--branco);
   }
 
   .card {
-    padding: 30px;
-    border-radius: 12px;
-    background: #f9f9f9;
-    border: 2px solid #eeeeee;
-    transition: all 0.3s ease;
+    background-color: var(--branco);
+    border: 2px var(--azul) solid;
+    color: var(--azul);
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 75px auto;
+    width: 750px;
+    padding: 25px;
+    border-radius: 20px;
 
-    &:hover {
-      transform: translateY(-8px);
-      border-color: #667eea;
-      box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
+    @media (max-width: 48rem) {
+      display: flex;
+      width: 500px;
+      padding: 25px;
+      gap: 20px;
+      border-radius: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .imagem {
+    width: 350px;
+    height: 350px;
+
+    @media (max-width: 48rem) {
+      width: 250px;
+      height: 250px;
     }
 
-    .icon {
-      font-size: 40px;
-      margin-bottom: 15px;
-    }
-
-    h3 {
-      font-size: 20px;
-      color: #1a1a1a;
-      margin-bottom: 10px;
-      font-weight: 600;
-    }
-
-    p {
-      color: #666;
-      line-height: 1.6;
-      font-size: 15px;
-    }
   }
 }

@@ -1,8 +1,10 @@
 import Header from "@/components/common/Header/header";
 import { HeroSection } from "@/components/sections/Hero/hero";
-import  ResultsSection  from "@/components/sections/Results/results";
-import  ProblemsSection  from "@/components/sections/Problems/problems";
-import  ProcessSection  from "@/components/sections/Process/process";
+import ResultsSection from "@/components/sections/Results/results";
+import ProblemsSection from "@/components/sections/Problems/problems";
+import ProcessSection from "@/components/sections/Process/process";
+import TestimonialsSection from "@/components/sections/Testimonials/testimonials";
+import PresentationsSection from "@/components/sections/Presentations/presentations";
 
 export default function Page() {
   return (
@@ -12,6 +14,8 @@ export default function Page() {
       <ResultsSection />
       <ProblemsSection />
       <ProcessSection />
+      <TestimonialsSection />
+      <PresentationsSection />
     </>
   );
 }

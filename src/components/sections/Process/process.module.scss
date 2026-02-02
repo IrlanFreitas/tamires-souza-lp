@@ -29,6 +29,7 @@
 
     &Metodo {
       @extend .container;
+      max-width: 1000px;
     }
 
     &Resultados {
@@ -72,6 +73,12 @@
     grid-template-columns: repeat(5, 16%);
     justify-content: center;
     gap: 20px;
+
+    @media (max-width: 48rem) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
   }
 
   .resultadoIcon {
@@ -89,5 +96,10 @@
     text-align: center;
     height: 250px;
     box-shadow: 5px 5px 10px 0px #00000053;
+
+    @media (max-width: 48rem) {
+      width: 150px;
+    }
+
   }
 }

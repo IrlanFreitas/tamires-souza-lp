@@ -18,6 +18,7 @@
     "@svgr/webpack": "^8.1.0",
     "@types/node": "25.0.9",
     "@types/react": "19.2.8",
+    "babel-plugin-inline-react-svg": "^2.0.2",
     "eslint": "^8.57.0",
     "eslint-config-next": "^15.0.0",
     "sass": "^1.70.0"

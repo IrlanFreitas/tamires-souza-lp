@@ -38,7 +38,7 @@ export const metadata: Metadata = {
       "Estratégias de marketing digital para profissionais e clínicas de saúde.",
     images: [
       {
-        url: "https://tamires-souza-lp.vercel.app/og-image.png",
+        url: "https://tamires-souza-lp.vercel.app/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Tamires Souza",

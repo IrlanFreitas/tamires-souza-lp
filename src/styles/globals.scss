@@ -50,7 +50,7 @@ body {
   --laranja: #BE7352;
 
   --fontTitulos: 'Merriweather';
-  --fontCorpo: 'Open Sans';
+  --fontCorpo: Open Sans;
 }
 
 /* Tipografia */
@@ -184,4 +184,13 @@ img {
   img {
     page-break-inside: avoid;
   }
+}
+
+.szh-accordion__item-btn {
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  text-align: left;
 }

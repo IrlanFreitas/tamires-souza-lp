@@ -7,7 +7,7 @@ const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-openSans",
 });
 
 const merriweather = Merriweather({
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://tamires-souza-lp.com",
+    url: "https://tamires-souza-lp.vercel.app",
     title: "Tamires Souza | Especialista em Marketing de Saúde",
     description:
       "Estratégias de marketing digital para profissionais e clínicas de saúde.",
     images: [
       {
-        url: "https://tamires-souza-lp.com/og-image.png",
+        url: "https://tamires-souza-lp.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Tamires Souza",
@@ -65,7 +65,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ffffff" />
         <link rel="icon" href="/images/logos/LOGO-Tamires-Souza-Branco.svg" />
-        <link rel="canonical" href="https://tamires-souza-lp.com" />
+        <link rel="canonical" href="https://tamires-souza-lp.vercel.app" />
       </head>
       <body className={`${openSans.variable} ${merriweather.variable}`}>
         {children}

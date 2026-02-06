@@ -5,6 +5,7 @@ import ProblemsSection from "@/components/sections/Problems/problems";
 import ProcessSection from "@/components/sections/Process/process";
 import TestimonialsSection from "@/components/sections/Testimonials/testimonials";
 import PresentationsSection from "@/components/sections/Presentations/presentations";
+import FaqSection from "@/components/sections/FAQ/faq";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <ProcessSection />
       <TestimonialsSection />
       <PresentationsSection />
+      <FaqSection />
     </>
   );
 }

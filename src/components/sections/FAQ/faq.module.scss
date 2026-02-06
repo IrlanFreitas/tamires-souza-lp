@@ -1,0 +1,92 @@
+.faq {
+  min-height: 120vh;
+  // padding: 100px 0;
+  width: 100%;
+  color: var(--azul);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #d9d9d9;
+  background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23747c8f' fill-opacity='0.2'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+  @media (max-width: 425px) {
+    min-height: 160vh;
+  }
+
+  .container {
+    max-width: 1200px;
+    // margin: auto;
+    // padding-bottom: 100px;
+    width: 100%;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linha {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--azulApagado);
+    height: 3px;
+    opacity: .50;
+    // display: inline-block;
+    // margin-bottom: 10px;
+
+    @media (max-width: 425px) {
+      width: 80%;
+    }
+  }
+
+  .titulo {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: var(--font-merriweather)
+  }
+
+  h3 {
+    text-align: center;
+    color: var(--azulApagado);
+    margin-top: 10px;
+  }
+
+  .perguntas {
+    max-width: 800px;
+    width: 80%;
+    font-family: var(--font-openSans)
+  }
+
+  .pergunta {
+    margin-bottom: 15px;
+    border: 1px solid #212D4F;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .resposta {
+    width: 100%;
+    padding: 16px 20px;
+    color: var(--azul);
+    font-family: var(--fontCorpo);
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s;
+  }
+}

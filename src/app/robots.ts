@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin", "/_next", "/static"],
     },
-    sitemap: "https://tamires-souza-lp.com/sitemap.xml",
+    sitemap: "https://tamires-souza-lp.vercel.app/sitemap.xml",
   };
 }

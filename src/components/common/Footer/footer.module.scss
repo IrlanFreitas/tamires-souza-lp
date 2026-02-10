@@ -1,0 +1,78 @@
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #013E7F;
+  box-shadow: inset 0px 0px 5px 0px #00000089;
+
+  a {
+    text-decoration: none;
+    color: var(--cinzaClaro);
+  }
+
+  @media (max-width: 48rem) {
+    height: 400px;
+  }
+
+  .container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 48rem) {
+      flex-direction: column;
+    }
+  }
+
+  .copyright {
+    font-family: var(--font-merriweather);
+    color: var(--cinzaClaro);
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    font-size: .8rem;
+    align-items: flex-start;
+  }
+
+  .logo div {
+    text-align: center;
+  }
+
+  .logoNome {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .consultora {
+    font-size: .9rem;
+    text-align: center;
+  }
+
+  .tamires {
+    font-family: var(--font-merriweather);
+    font-size: 1.5rem;
+  }
+
+  .healthcare {
+    font-family: var(--font-bebas);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .midias {
+    display: flex;
+    gap: 10px;
+  }
+
+  .creators {
+    font-family: var(--font-merriweather);
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}

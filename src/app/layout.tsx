@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Open_Sans, Merriweather } from "next/font/google";
+import { Open_Sans, Merriweather, Bebas_Neue } from "next/font/google";
 import "@styles/globals.scss";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -15,6 +15,13 @@ const merriweather = Merriweather({
   display: "swap",
   weight: ["400", "500", "600", "700"],
   variable: "--font-merriweather",
+});
+
+const bebas = Bebas_Neue({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400"],
+  variable: "--font-bebas",
 });
 
 export const metadata: Metadata = {
@@ -67,7 +74,9 @@ export default function RootLayout({
         <link rel="icon" href="/images/logos/LOGO-Tamires-Souza-Branco.svg" />
         <link rel="canonical" href="https://tamires-souza-lp.vercel.app" />
       </head>
-      <body className={`${openSans.variable} ${merriweather.variable}`}>
+      <body
+        className={`${openSans.variable} ${merriweather.variable} ${bebas.variable}`}
+      >
         {children}
         <Analytics />
       </body>

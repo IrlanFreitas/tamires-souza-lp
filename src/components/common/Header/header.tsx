@@ -30,7 +30,9 @@ const Header = () => {
           </Link>
         </span>
 
-        <ul className={`${!mobile ? styles.nav : styles.navMobile} ${mobileMenu && styles.navMobileActive}`}>
+        <ul
+          className={`${!mobile ? styles.nav : styles.navMobile} ${mobileMenu && styles.navMobileActive}`}
+        >
           <li>
             <Link href="#resultados">Resultados</Link>
           </li>
@@ -46,14 +48,16 @@ const Header = () => {
         </ul>
 
         <span className={styles.icones}>
-          <Image
-            src="/images/logos/linkedin.svg"
-            alt="Linkedin Icon"
-            width={30}
-            height={30}
-            priority
-            quality={100}
-          />
+          <a href="https://www.linkedin.com/in/souza-tamires/">
+            <Image
+              src="/images/logos/linkedin.svg"
+              alt="Linkedin Icon"
+              width={30}
+              height={30}
+              priority
+              quality={100}
+            />
+          </a>
 
           <Image
             src="/images/logos/whatsapp.svg"

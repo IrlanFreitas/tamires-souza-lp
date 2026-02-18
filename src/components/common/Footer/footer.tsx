@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.creators}>
-        <a target="_blank" href="https://www.instagram.com/caioseolocal/">caioseolocal</a> +
+        <a target="_blank" href="https://caioseolocal.vercel.app/">caioseolocal</a> +
         <a target="_blank" href="https://www.instagram.com/_hirlab/">hirlab</a>
       </div>
     </section>

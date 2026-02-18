@@ -23,7 +23,7 @@
     h2 {
       color: var(--branco);
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin-bottom: 20px;
     }
 
@@ -84,6 +84,12 @@
   .resultadoIcon {
     align-self: center;
     justify-self: center;
+
+    @media (max-width: 48rem) {
+      width: 100px;
+      height: 100px;
+      margin-top: 30px;
+    }
   }
 
   .resultadoCard {
@@ -98,7 +104,7 @@
     box-shadow: 5px 5px 10px 0px #00000053;
 
     @media (max-width: 48rem) {
-      width: 150px;
+      width: 90%;
     }
 
   }

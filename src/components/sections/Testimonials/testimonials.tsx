@@ -1,12 +1,11 @@
 import Image from "next/image";
-import React from "react";
 import styles from "./testimonials.module.scss";
 
 const TestimonialsSection = () => {
   return (
-    <section className={styles.testimonials}>
+    <section id="testimonials" className={styles.testimonials}>
       <div className={styles.container}>
-        <h2>Depoimentos de clientes</h2>
+        <h2>Mais depoimentos</h2>
         <hr className={styles.linha} />
         <div className={styles.card}>
           <Image

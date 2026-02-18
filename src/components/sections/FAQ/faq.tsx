@@ -24,28 +24,34 @@ const items = [
     title:
       "Que tipo de trabalho é esse: consultoria, mentoria ou comunicação institucional?",
     content:
-      "React é uma biblioteca JavaScript para construir interfaces de usuário. Foi desenvolvida pelo Facebook e permite criar componentes reutilizáveis.",
+      "É um processo estratégico de diagnóstico, clareza e alinhamento da comunicação, conduzido diretamente com líderes e gestores. Atuo como consultora e mentora para estruturar a forma como a instituição comunica decisões, posicionamento e prioridades, garantindo coerência entre liderança, áreas e equipes.",
   },
   {
     title: "⁠O que significa “comunicação sem ruído” na prática?",
     content:
-      "O useState é um Hook que permite adicionar estado a componentes funcionais. Ele retorna um par: o valor atual do estado e uma função para atualizá-lo.",
+      "Comunicação sem ruído é quando todas as áreas falam a mesma língua, com clareza de objetivos, mensagens e responsabilidades. Na prática, isso reduz retrabalho, conflitos internos, desalinhamento entre marketing, comercial, área médica e diretoria, e aumenta a eficiência das decisões.",
   },
   {
     title: "Como o Protocolo VITAL ajuda no alinhamento entre áreas e equipes?",
     content:
-      "Componentes permitem dividir a UI em partes independentes e reutilizáveis. Isso torna o código mais organizado, fácil de manter e testar.",
+      "O Protocolo VITAL é um método proprietário criado para organizar a comunicação estratégica da liderança. Ele atua em cinco dimensões: visão, inteligência de contexto, transmissão da mensagem, autoridade e liderança. Com isso, líderes passam a comunicar com clareza, as áreas se alinham e as decisões fluem sem ruído.",
   },
   {
     title:
       "Esse trabalho envolve marketing digital, campanhas ou produção de conteúdo?",
-    content:
-      "Componentes permitem dividir a UI em partes independentes e reutilizáveis. Isso torna o código mais organizado, fácil de manter e testar.",
+    content: `Não.
+      O foco está antes da execução.
+      Meu trabalho é garantir que a liderança tenha clareza estratégica, discurso unificado e alinhamento institucional.
+      Quando isso existe, qualquer ação de marketing ou comunicação passa a funcionar melhor com menos esforço e menos desperdício.`,
   },
   {
     title: "Para que tipo de instituição esse trabalho é indicado?",
-    content:
-      "Componentes permitem dividir a UI em partes independentes e reutilizáveis. Isso torna o código mais organizado, fácil de manter e testar.",
+    content: `Para hospitais, clínicas e indústrias farmacêuticas que já possuem estrutura, equipes e investimentos em comunicação, mas enfrentam desafios como:
+    mensagens desencontradas entre áreas
+    dificuldade de alinhamento entre liderança e times
+    ruído na comunicação institucional
+    decisões de marketing sem clareza estratégica
+    Esse trabalho é indicado para quem entende que comunicação é uma ferramenta de liderança e governança, não apenas divulgação.`,
   },
 ];
 
@@ -57,7 +63,7 @@ const FaqSection = () => {
   };
 
   return (
-    <section className={styles.faq}>
+    <section id="faq" className={styles.faq}>
       <div className={styles.container}>
         <span className={styles.header}>
           <h2 className={styles.titulo}>Perguntas frequentes</h2>

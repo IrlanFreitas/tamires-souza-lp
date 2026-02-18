@@ -96,7 +96,7 @@ const FaqSection = () => {
 
               <div
                 style={{
-                  maxHeight: openIndex === index ? "200px" : "0",
+                  maxHeight: openIndex === index ? "100%" : "0",
                   overflow: "hidden",
                   transition: "max-height 0.3s ease",
                   backgroundColor: "#fafafa",

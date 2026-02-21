@@ -54,7 +54,7 @@ const presentations = () => {
               indústria farmacêutica, healthtechs e startups.
             </p>
             <p className={styles.paragrafo}>
-              Seu trabalho é focado em consultoria estratégica e mentorias, com
+              Seu trabalho é focado em consultoria estratégica e mentorias, com{" "}
               <strong>
                 ênfase em comunicação ética, posicionamento, branding e
                 construção de autoridade no mercado da saúde.
@@ -77,7 +77,7 @@ const presentations = () => {
             </p>
             <p className={styles.paragrafo}>
               <strong>Atende de forma presencial e online</strong>, com foco na
-              região de
+              região de {" "}
               <strong>
                 Bragança Paulista e cidades do interior de São Paulo
               </strong>

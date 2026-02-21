@@ -1,6 +1,5 @@
 .faq {
   min-height: 120vh;
-  // padding: 100px 0;
   width: 100%;
   color: var(--azul);
   display: flex;
@@ -53,7 +52,7 @@
     font-family: var(--font-merriweather)
   }
 
-  h3 {
+  .subTitulo {
     text-align: center;
     color: var(--azulApagado);
     margin-top: 10px;

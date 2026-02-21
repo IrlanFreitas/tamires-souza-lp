@@ -68,7 +68,7 @@ const FaqSection = () => {
         <span className={styles.header}>
           <h2 className={styles.titulo}>Perguntas frequentes</h2>
           <hr className={styles.linha} />
-          <h3>Consultoria & Mentoria VITAL</h3>
+          <h3 className={styles.subTitulo}>Consultoria & Mentoria VITAL</h3>
         </span>
 
         <div className={styles.perguntas}>

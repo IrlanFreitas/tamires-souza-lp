@@ -137,25 +137,53 @@ const Services = () => {
                 className={activeTab === "tab1" ? `${styles.active}` : ""}
                 onClick={() => setActiveTab("tab1")}
               >
-                Palestras & Treinamentos
+                <Image
+                  src="/images/logos/quickreply.svg"
+                  alt="Icone de Palestras & Treinamentos"
+                  width={25}
+                  height={25}
+                  quality={100}
+                />{" "}
+                <p>Palestras & Treinamentos</p>
               </li>
               <li
                 className={activeTab === "tab2" ? `${styles.active}` : ""}
                 onClick={() => setActiveTab("tab2")}
               >
-                Consultoria Estratégica
+                <Image
+                  src="/images/logos/outpatient.svg"
+                  alt="Icone de Consultoria Estratégica"
+                  width={25}
+                  height={25}
+                  quality={100}
+                />{" "}
+                <p>Consultoria Estratégica</p>
               </li>
               <li
                 className={activeTab === "tab3" ? `${styles.active}` : ""}
                 onClick={() => setActiveTab("tab3")}
               >
-                Mentorial Vital
+                <Image
+                  src="/images/logos/self_improvement.svg"
+                  alt="Icone de Mentoria Vital"
+                  width={25}
+                  height={25}
+                  quality={100}
+                />{" "}
+                <p>Mentoria Vital</p>
               </li>
               <li
                 className={activeTab === "tab4" ? `${styles.active}` : ""}
                 onClick={() => setActiveTab("tab4")}
               >
-                Kit do Paciente Oculto
+                <Image
+                  src="/images/logos/build.svg"
+                  alt="Icone de Kit do Paciente Oculto"
+                  width={25}
+                  height={25}
+                  quality={100}
+                />{" "}
+                <p>Kit do Paciente Oculto</p>
               </li>
             </ul>
             <div className={styles.outlet}>

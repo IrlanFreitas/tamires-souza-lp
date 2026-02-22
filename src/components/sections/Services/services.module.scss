@@ -92,13 +92,13 @@
 
     /* Tab Navigation */
     ul.nav {
-      width: 90%;
+      width: 92%;
       margin: 0 auto 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       border-bottom: 1px solid var(--branco);
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-family: var(--font-merriweather);
       // border-radius: 2rem;
       // height: 80px;
@@ -120,6 +120,8 @@
       text-align: center;
       cursor: pointer;
       transition: all 0.7s;
+      display: flex;
+      gap: 10px;
 
       @media (max-width: 769px) {
         width: 100%;
@@ -143,7 +145,7 @@
     }
 
     .outlet {
-      width: 90%;
+      width: 92%;
       margin: auto;
       display: grid;
       gap: 40px;
@@ -187,7 +189,12 @@
       font-size: 1.5rem;
       width: 90%;
 
+      @media (max-width: 425px) {
+        font-size: 1.2rem;
+      }
+
       @media (max-width: 768px) {
+        font-size: 1.3rem;
         width: 100%;
       }
     }

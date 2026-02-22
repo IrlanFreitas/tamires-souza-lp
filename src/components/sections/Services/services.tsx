@@ -20,7 +20,7 @@ const contentTabs: TabCard[] = [
   {
     tab: "tab1",
     content: {
-      src: "/images/testimonials/tamires-01.png",
+      src: "/images/services/tamires-posando.png",
       descricao:
         "Capacitação estratégica para médicos, líderes e equipes de saúde. Conteúdo prático para mudar cultura, liderança e resultados.",
       list: [
@@ -36,7 +36,7 @@ const contentTabs: TabCard[] = [
   {
     tab: "tab2",
     content: {
-      src: "/images/testimonials/tamires-02.png",
+      src: "/images/services/reuniao-com-clientes.png",
       descricao:
         "Intervenção pontual para destravar gargalos operacionais e organizar o crescimento da clínica ou hospital. Foco em decisões claras, geração de caixa e execução acompanhada.",
       list: [
@@ -52,7 +52,7 @@ const contentTabs: TabCard[] = [
   {
     tab: "tab3",
     content: {
-      src: "/images/testimonials/tamires-03.png",
+      src: "/images/services/coruja-mentoria-vital.png",
       descricao:
         "Acompanhamento premium para transformar a clínica em um negócio autogerenciável. Une estratégia, treinamento da equipe e implementação do Protocolo VITAL.",
       list: [
@@ -68,7 +68,7 @@ const contentTabs: TabCard[] = [
   {
     tab: "tab4",
     content: {
-      src: "/images/testimonials/tamires-04.png",
+      src: "/images/services/kit-paciente-oculto.png",
       descricao:
         "Diagnóstico prático para identificar onde sua clínica ou hospital perde faturamento e eficiência no atendimento. Analisa a jornada real do paciente e entrega dados acionáveis para correção imediata.",
       list: [

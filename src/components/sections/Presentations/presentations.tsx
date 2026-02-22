@@ -50,39 +50,35 @@ const presentations = () => {
                 {" "}
                 consultora de marketing especializada no setor da saúde
               </strong>
-              , com atuação junto a hospitais, clínicas, profissionais de saúde,
-              indústria farmacêutica, healthtechs e startups.
+              , atendendo hospitais, clínicas, profissionais, indústria
+              farmacêutica e healthtechs.
             </p>
             <p className={styles.paragrafo}>
-              Seu trabalho é focado em consultoria estratégica e mentorias, com{" "}
+              Atua com{" "}
               <strong>
-                ênfase em comunicação ética, posicionamento, branding e
-                construção de autoridade no mercado da saúde.
+                {" "}
+                consultoria estratégica e mentorias focadas em comunicação
+                ética, posicionamento, branding e construção de autoridade.
               </strong>{" "}
-              Atua desde o diagnóstico de marketing até a definição de
-              posicionamento, planejamento de conteúdo e mentorias práticas,{" "}
-              <strong>
-                sempre com soluções personalizadas de acordo com o contexto
-                regulatório e institucional de cada cliente.
-              </strong>
+              Desenvolve soluções personalizadas que vão do diagnóstico de
+              marketing ao planejamento de conteúdo, sempre alinhadas às
+              exigências regulatórias e institucionais de cada cliente.
             </p>
             <p className={styles.paragrafo}>
-              O <strong>principal diferencial</strong> está na integração entre{" "}
+              Seu diferencial está na{" "}
               <strong>
-                estratégia de marketing, ética médica e autoridade institucional
+                integração entre estratégia de marketing, ética médica e
+                autoridade institucional
               </strong>
-              , apoiando empresas e profissionais a se destacarem de forma
-              responsável em buscadores, IA, redes sociais e canais
-              digitais.{" "}
+              , ajudando empresas e profissionais a se destacarem de forma
+              responsável em buscadores, IA e canais digitais.
             </p>
             <p className={styles.paragrafo}>
-              <strong>Atende de forma presencial e online</strong>, com foco na
-              região de {" "}
-              <strong>
-                Bragança Paulista e cidades do interior de São Paulo
-              </strong>
-              , mediante agendamento prévio. Aceita diferentes formas de
-              pagamento, incluindo Pix, cartões, boleto e crédito recorrente.
+              Realiza atendimentos <strong>presenciais</strong> e{" "}
+              <strong>online</strong>, com foco em{" "}
+              <strong>Bragança Paulista e interior de São Paulo,</strong>{" "}
+              mediante agendamento. Aceita Pix, cartões, boleto e crédito
+              recorrente.
             </p>
           </div>
         </div>

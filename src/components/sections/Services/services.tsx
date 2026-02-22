@@ -87,19 +87,33 @@ const contentCard = ({ src, descricao, list, cta }: ContentCard) => {
     <>
       <Image
         src={src}
-        alt="Icone de Whatsapp"
+        alt="Imagem que é referência ao serviço prestado"
         width={100}
         height={100}
         quality={100}
         className={styles.imagem}
       />
-      <p>{descricao}</p>
-      <ul>
+      <p className={styles.descricao}>{descricao}</p>
+      <ul className={styles.bulletList}>
         {list.map((item) => (
-          <li key={item}>{item}</li>
+          <li className={styles.item} key={item}>
+            <Image
+              src="/images/logos/check_small.svg"
+              alt="Icone de Check"
+              width={20}
+              height={20}
+              quality={100}
+            />
+            <p>{item}</p>
+          </li>
         ))}
       </ul>
-      <a href="http://" target="_blank" rel="noopener noreferrer">
+      <a
+        className={styles.cta}
+        href="https://api.whatsapp.com/send/?phone=%2B5511967846989&text=Quero+contratar+a+palestra%2Ftreinamento+para+minha+empresa.&type=phone_number&app_absent=0"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {cta}
       </a>
     </>
@@ -110,7 +124,7 @@ const Services = () => {
   const [activeTab, setActiveTab] = useState("tab1");
 
   return (
-    <section className={styles.services}>
+    <section id="servicos" className={styles.services}>
       <div className={styles.container}>
         <div className={styles.header}>
           <h3 className={styles.titulo}>Serviços</h3>

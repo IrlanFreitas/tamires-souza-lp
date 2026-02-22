@@ -118,7 +118,7 @@ const ProcessSection = () => {
   };
 
   return (
-    <section className={styles.process}>
+    <section id="processo" className={styles.process}>
       <div className={styles.containerMetodo}>
         <h2>Como faço isso</h2>
         <hr className={styles.linha} />

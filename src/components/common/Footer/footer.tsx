@@ -40,15 +40,7 @@ const Footer = () => {
           </span>
         </div>
         <div className={styles.midias}>
-          <Link href="/">
-            <Image
-              src="/images/logos/whatsapp-branco.svg"
-              alt="WhatsApp logo"
-              width={25}
-              height={25}
-            />
-          </Link>
-          <Link href="/">
+          <Link href="https://www.linkedin.com/in/souza-tamires/">
             <Image
               src="/images/logos/linkedin-branco.svg"
               alt="Linkedin logo"
@@ -56,11 +48,25 @@ const Footer = () => {
               height={25}
             />
           </Link>
+
+          <Link href="https://api.whatsapp.com/send/?phone=%2B5511967846989&text=Quero+contratar+a+palestra%2Ftreinamento+para+minha+empresa.&type=phone_number&app_absent=0">
+            <Image
+              src="/images/logos/whatsapp-branco.svg"
+              alt="WhatsApp logo"
+              width={25}
+              height={25}
+            />
+          </Link>
         </div>
       </div>
       <div className={styles.creators}>
-        <a target="_blank" href="https://caioseolocal.vercel.app/">caioseolocal</a> +
-        <a target="_blank" href="https://www.instagram.com/_hirlab/">hirlab</a>
+        <a target="_blank" href="https://caioseolocal.vercel.app/">
+          caioseolocal
+        </a>{" "}
+        +
+        <a target="_blank" href="https://www.instagram.com/_hirlab/">
+          hirlab
+        </a>
       </div>
     </section>
   );

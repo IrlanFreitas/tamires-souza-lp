@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import styles from "./testimonials.module.scss";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -97,7 +98,7 @@ const TestimonialsSection = () => {
             aria-live="polite"
           >
             <div className={styles.cardAccent} />
-            <div className={styles.cardBgQuote} >
+            <div className={styles.cardBgQuote}>
               <QuoteIcon />
             </div>
 
@@ -166,6 +167,17 @@ const TestimonialsSection = () => {
             </div>
           </div>
         </div>
+
+        <button className={styles.botao}>
+          Saiba mais
+          <Image
+            src="/images/logos/whatsapp-branco.svg"
+            alt="Icone de Whatsapp"
+            width={20}
+            height={20}
+            quality={100}
+          />
+        </button>
       </div>
     </section>
   );

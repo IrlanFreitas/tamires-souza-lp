@@ -76,6 +76,7 @@
     font-family: var(--fontTitulos);
 
     &:hover {
+      transform: scale(110%);
       box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
     }
   }

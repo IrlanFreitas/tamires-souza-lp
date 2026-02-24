@@ -42,9 +42,8 @@
   }
 
   .botao:hover {
-    background-color: var(--branco);
-    color: var(--laranja);
     transform: scale(110%);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
   }
 
   .icon {
@@ -150,7 +149,7 @@
 }
 
 .cardQuote {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--fontCorpo);
   font-size: clamp(16px, 2.5vw, 18px);
   color: #e8e0d0;
   line-height: 1.7;
@@ -167,12 +166,6 @@
   background: #c9a96e;
   margin-bottom: 28px;
   opacity: 0.6;
-}
-
-.cardAuthor {
-  display: flex;
-  align-items: center;
-  gap: 16px;
 }
 
 .authorAvatar {
@@ -201,6 +194,7 @@
   font-weight: 500;
   color: #f5f0e8;
   letter-spacing: 0.3px;
+  font-family: var(--fontTitulos);
 }
 
 .authorRole {

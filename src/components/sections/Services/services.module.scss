@@ -147,6 +147,10 @@
     .outlet {
       width: 92%;
       margin: auto;
+    }
+
+    .content {
+      width: 100%;
       display: grid;
       gap: 40px;
       grid-template-columns: 30% 70%;

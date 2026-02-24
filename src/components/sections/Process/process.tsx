@@ -82,7 +82,7 @@ const resultados = [
 const ProcessSection = () => {
   const formatacaoItem = (numeroItem, iconName, titulo, descricao) => {
     return (
-      <div className={styles.item}>
+      <div key={numeroItem} className={styles.item}>
         <div className={styles.headerItem}>
           <span className={styles.numeroItem}>{numeroItem}</span>
           <Image
@@ -102,7 +102,7 @@ const ProcessSection = () => {
 
   const formatacaoResultados = (iconName, descricao) => {
     return (
-      <div className={styles.resultadoCard}>
+      <div key={iconName} className={styles.resultadoCard}>
         <Image
           src={`/images/logos/${iconName}.svg`}
           alt="Icone divisor de conteúdo"

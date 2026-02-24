@@ -84,7 +84,7 @@ const contentTabs: TabCard[] = [
 
 const contentCard = ({ src, descricao, list, cta }: ContentCard) => {
   return (
-    <>
+    <span key={descricao} className={styles.content}>
       <Image
         src={src}
         alt="Imagem que é referência ao serviço prestado"
@@ -116,7 +116,7 @@ const contentCard = ({ src, descricao, list, cta }: ContentCard) => {
       >
         {cta}
       </a>
-    </>
+    </span>
   );
 };
 

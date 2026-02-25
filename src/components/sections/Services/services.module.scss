@@ -9,10 +9,6 @@
   background-color: #d9d9d9;
   background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23747c8f' fill-opacity='0.2'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
-  // @media (max-width: 425px) {
-  //   min-height: 160vh;
-  // }
-
   @media (max-width: 1024px) {
     min-height: 160vh;
   }
@@ -20,14 +16,11 @@
   .container {
     max-width: 1200px;
     width: 100%;
-    // min-height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     min-height: inherit;
-    // gap: 50px;
-    // padding-top: 80px;
   }
 
   .header {
@@ -77,20 +70,13 @@
     border-radius: 2rem;
     box-shadow: 5px 5px 10px 0px #00000053;
 
-    @media (max-width: 769px) {
-      padding: 2rem 0;
-      width: 90%;
-      margin: 0 auto;
-    }
-
     @media (max-width: 1024px) {
       padding: 2rem 0;
       width: 90%;
-      margin: 0 auto;
+      margin: auto;
     }
 
 
-    /* Tab Navigation */
     ul.nav {
       width: 92%;
       margin: 0 auto 2rem;
@@ -100,14 +86,12 @@
       border-bottom: 1px solid var(--branco);
       font-size: 1rem;
       font-family: var(--font-merriweather);
-      // border-radius: 2rem;
-      // height: 80px;
       display: flex;
       justify-content: center;
       text-align: center;
 
       @media (max-width: 768px) {
-        width: 80%;
+        width: 90%;
         flex-wrap: wrap;
       }
     }
@@ -147,6 +131,10 @@
     .outlet {
       width: 92%;
       margin: auto;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     .content {
@@ -158,10 +146,12 @@
       font-family: var(--fontCorpo);
 
       @media (max-width: 768px) {
-        width: 80%;
+        width: 90%;
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
+        justify-items: center;
+        margin: auto;
       }
     }
 
@@ -170,10 +160,14 @@
       width: 100%;
       grid-row: span 3;
 
+      @media (max-width: 425) {
+        height: 300px;
+      }
+
       @media (max-width: 768px) {
         width: 100%;
         margin: auto;
-        height: 500px;
+        height: 400px;
       }
     }
 

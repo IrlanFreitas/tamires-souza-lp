@@ -36,6 +36,11 @@
       grid-template-columns: 1fr;
       gap: 30px;
     }
+
+    @media (max-width: 425) {
+      width: 90%;
+      margin: auto;
+    }
   }
 
   .content {
@@ -74,6 +79,10 @@
     margin-top: 50px;
     font-size: 1.3rem;
     font-family: var(--fontTitulos);
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
 
     &:hover {
       transform: scale(110%);

@@ -2,8 +2,6 @@
 import { useState } from "react";
 import styles from "./faq.module.scss";
 
-import { Accordion, AccordionItem } from "@szhsin/react-accordion";
-
 const items = [
   {
     title: "ESTE trabalho VAI substituir minha agência de marketing?",

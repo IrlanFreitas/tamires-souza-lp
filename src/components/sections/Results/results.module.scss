@@ -85,6 +85,12 @@
     height: 3px;
     opacity: .50;
     border: none;
+
+    @media (max-width: 768px) {
+      max-width: 90%;
+      margin: auto;
+    }
+
   }
 
   .numeros {

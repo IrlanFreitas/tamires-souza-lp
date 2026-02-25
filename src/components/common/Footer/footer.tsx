@@ -22,23 +22,33 @@ const Footer = () => {
           <p className={styles.healthcare}>healthcare marketing</p>
         </div>
         <div className={styles.copyright}>
-          <Image
-            src="/images/logos/copyright.svg"
-            alt="Copyright logo"
-            width={20}
-            height={2}
-          />
-          <span>
-            <p>
-              2026 Tamires Souza
-              <strong>
-                {" "}
-                Consultora de Marketing para Hospitais e Indústria
-              </strong>
-            </p>
-            <p>Farmacêutica Todos os direitos reservados</p>
+          <span className={styles.copyrightText}>
+            <Image
+              src="/images/logos/copyright.svg"
+              alt="Copyright logo"
+              width={20}
+              height={2}
+            />
+            <span>
+              <p>
+                2026 Tamires Souza
+                <strong>
+                  {" "}
+                  Consultora de Marketing para Hospitais e Indústria
+                </strong>
+              </p>
+              <p>Farmacêutica Todos os direitos reservados</p>
+            </span>
           </span>
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.6517889856714!2d-46.5286426237418!3d-22.963047739885944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cec9c354797977%3A0x2061878d5666a9a2!2sR.%20Mauro%20de%20Pr%C3%B3spero%2C%20500%20-%20Jardim%20Santa%20Rita%20de%20Cassia%2C%20Bragan%C3%A7a%20Paulista%20-%20SP%2C%2012913-045!5e0!3m2!1spt-BR!2sbr!4v1772058008555!5m2!1spt-BR!2sbr"
+            className={styles.map}
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+
         <div className={styles.midias}>
           <Link href="https://www.linkedin.com/in/souza-tamires/">
             <Image

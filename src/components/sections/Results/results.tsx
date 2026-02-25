@@ -10,12 +10,16 @@ const companies = [
   { name: "Benegrip", src: "/images/empresas/benegrip-logo.png" },
   { name: "Tamarine", src: "/images/empresas/tamarine-logo.png" },
 ];
-const allCards = [...companies, ...companies];
+const allCards = [...companies, ...companies, ...companies];
 
 const ResultsSection = () => {
   const row1 = allCards;
   // Row 2: offset the starting point for variety
   const row2 = [
+    ...companies.slice(6),
+    ...companies.slice(0, 6),
+    ...companies.slice(6),
+    ...companies.slice(0, 6),
     ...companies.slice(6),
     ...companies.slice(0, 6),
     ...companies.slice(6),
@@ -27,52 +31,75 @@ const ResultsSection = () => {
       <section className={styles.results} id="resultados">
         <div className={styles.container}>
           <h2>Gerei resultados para as seguintes empresas</h2>
-          <hr className={styles.linha} />
 
-          {/* <div className={styles.empresas}>
-            <Image
-              src="/images/empresas/hyperpharma-logo.png"
-              alt="Icone de Whatsapp"
-              width={100}
-              height={100}
-              quality={100}
-            />
-            <Image
-              src="/images/empresas/neosaldina-logo.png"
-              alt="Icone de Whatsapp"
-              width={100}
-              height={100}
-              quality={100}
-            />
-            <Image
-              src="/images/empresas/buscopan-logo.png"
-              alt="Icone de Whatsapp"
-              width={100}
-              height={100}
-              quality={100}
-            />
-            <Image
-              src="/images/empresas/mantercorp-logo.png"
-              alt="Icone de Whatsapp"
-              width={100}
-              height={100}
-              quality={100}
-            />
-            <Image
-              src="/images/empresas/benegrip-logo.png"
-              alt="Icone de Whatsapp"
-              width={100}
-              height={100}
-              quality={100}
-            />
-            <Image
-              src="/images/empresas/tamarine-logo.png"
-              alt="Icone de Whatsapp"
-              width={100}
-              height={100}
-              quality={100}
-            />
-          </div> */}
+          <section
+            className={styles.section}
+            aria-label="Companies that trust us"
+          >
+            <div className={styles.carouselOuter}>
+              {/* Row 1 — forward */}
+              <div className={styles.carouselTrackWrapper}>
+                <div className={styles.carouselTrack} aria-hidden="true">
+                  {row1.map((company, i) => (
+                    <div className={styles.logoCard} key={`r1-${i}`}>
+                      <Image
+                        src={company.src}
+                        alt={`Logo de empresa ${company.name}`}
+                        width={100}
+                        height={100}
+                        quality={100}
+                        className={styles.imagem}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Row 2 — reverse */}
+              <div className={styles.carouselTrackWrapper}>
+                <div
+                  className={`${styles.carouselTrack} ${styles.reverse}`}
+                  aria-hidden="true"
+                >
+                  {row2.map((company, i) => (
+                    <div className={styles.logoCard} key={`r1-${i}`}>
+                      <Image
+                        src={company.src}
+                        alt={`Logo de empresa ${company.name}`}
+                        width={100}
+                        height={100}
+                        quality={100}
+                        className={styles.imagem}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="stats-bar">
+          <div className="stat-item">
+            <span className="stat-number">200+</span>
+            <span className="stat-label">Companies</span>
+          </div>
+          <div className="stat-divider" />
+          <div className="stat-item">
+            <span className="stat-number">40k+</span>
+            <span className="stat-label">Users</span>
+          </div>
+          <div className="stat-divider" />
+          <div className="stat-item">
+            <span className="stat-number">99.9%</span>
+            <span className="stat-label">Uptime</span>
+          </div>
+          <div className="stat-divider" />
+          <div className="stat-item">
+            <span className="stat-number">4.9★</span>
+            <span className="stat-label">Rating</span>
+          </div>
+        </div> */}
+          </section>
+
           <hr className={styles.linha} />
           <div className={styles.numeros}>
             <div className={styles.indicador}>
@@ -110,82 +137,6 @@ const ResultsSection = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className={styles.section} aria-label="Companies that trust us">
-        <div className={styles.sectionHeader}>
-          <p className={styles.sectionLabel}>Trusted by</p>
-          {/* <h2 className="section-title">
-            Companies that <span className="highlight">ship with us</span>
-          </h2>
-          <p className="section-subtitle">
-            From early-stage startups to publicly traded companies
-          </p> */}
-        </div>
-
-        <div className={styles.carouselOuter}>
-          {/* Row 1 — forward */}
-          <div className={styles.carouselTrackWrapper}>
-            <div className={styles.carouselTrack} aria-hidden="true">
-              {row1.map((company, i) => (
-                <div className={styles.logoCard} key={`r1-${i}`}>
-                  <span className={styles.logoAbbr}>{company.name}</span>
-                  {/* <Image
-                    src="/images/empresas/hyperpharma-logo.png"
-                    alt="Icone de Whatsapp"
-                    width={100}
-                    height={100}
-                    quality={100}
-                  /> */}
-                  <span className={styles.logoName}>{company.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Row 2 — reverse */}
-          <div className={styles.carouselTrackWrapper}>
-            <div
-              className={`${styles.carouselTrack} ${styles.reverse}`}
-              aria-hidden="true"
-            >
-              {row2.map((company, i) => (
-                <div className={styles.logoCard} key={`r2-${i}`}>
-                  <span className={styles.logoAbbr}>{company.name}</span>
-                  {/* <Image
-                    src="/images/empresas/hyperpharma-logo.png"
-                    alt="Icone de Whatsapp"
-                    width={100}
-                    height={100}
-                    quality={100}
-                  /> */}
-                  <span className={styles.logoName}>{company.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* <div className="stats-bar">
-          <div className="stat-item">
-            <span className="stat-number">200+</span>
-            <span className="stat-label">Companies</span>
-          </div>
-          <div className="stat-divider" />
-          <div className="stat-item">
-            <span className="stat-number">40k+</span>
-            <span className="stat-label">Users</span>
-          </div>
-          <div className="stat-divider" />
-          <div className="stat-item">
-            <span className="stat-number">99.9%</span>
-            <span className="stat-label">Uptime</span>
-          </div>
-          <div className="stat-divider" />
-          <div className="stat-item">
-            <span className="stat-number">4.9★</span>
-            <span className="stat-label">Rating</span>
-          </div>
-        </div> */}
       </section>
     </>
   );

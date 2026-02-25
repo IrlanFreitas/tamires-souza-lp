@@ -2,7 +2,8 @@
   min-height: 550px;
   width: 100%;
   background-color: var(--azulPerolado);
-  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.25) inset;
+  color: var(--branco);
+  // box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.25) inset;
 
   @keyframes scroll {
     0% {
@@ -59,7 +60,6 @@
   }
 
   .container {
-    max-width: 1200px;
     padding: 60px 20px;
     margin: 0 auto;
 
@@ -67,7 +67,7 @@
       color: var(--branco);
       text-align: center;
       font-size: 1.5rem;
-      margin-bottom: 20px;
+      margin-bottom: 50px;
     }
   }
 
@@ -88,6 +88,7 @@
   }
 
   .numeros {
+    max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     font-size: 1.3rem;
@@ -112,26 +113,27 @@
 }
 
 :root {
-    --bg: #f7f5f0;
-    --surface: #efefea;
-    --border: #ddddd5;
-    --text-primary: #1a1a18;
-    --text-secondary: #888880;
-    --accent: #1a1a18;
-    --card-bg: #ffffff;
-    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
-    --gap: 20px;
-    --card-width: 180px;
-    --card-height: 88px;
-    --duration: 32s;
+  --bg: #f7f5f0;
+  --surface: #efefea;
+  --border: #ddddd5;
+  --text-primary: #1a1a18;
+  --text-secondary: #888880;
+  --accent: #1a1a18;
+  --card-bg: #ffffff;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 16px rgba(0, 0, 0, 0.04);
+  --gap: 20px;
+  --card-width: 100px;
+  --card-height: 88px;
+  --duration: 32s;
 }
 
 .section {
   width: 100%;
   overflow: hidden;
-  min-height: 550px;
+  // min-height: 550px;
   background-color: var(--azulPerolado);
-  box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.25) inset;
+  // box-shadow: 0px 0px 50px -10px rgba(0, 0, 0, 0.25) inset;
+  margin-bottom: 50px;
 }
 
 .sectionHeader {
@@ -206,12 +208,12 @@
 
 .carouselOuter::before {
   left: 0;
-  background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+  background: linear-gradient(to right, var(--azulPerolado) 0%, transparent 100%);
 }
 
 .carouselOuter::after {
   right: 0;
-  background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+  background: linear-gradient(to left, var(--azulPerolado) 0%, transparent 100%);
 }
 
 .carouselTrackWrapper {
@@ -253,8 +255,8 @@
   flex-shrink: 0;
   width: var(--card-width);
   height: var(--card-height);
-  background: var(--card-bg);
-  border: 1px solid var(--border);
+  // background: var(--card-bg);
+  // border: 1px solid var(--border);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -288,6 +290,11 @@
   text-transform: uppercase;
   color: var(--text-secondary);
   transition: color 0.2s;
+}
+
+.imagem {
+  width: 100%;
+  height: 100%;
 }
 
 .logoCard:hover .logoAbbr {

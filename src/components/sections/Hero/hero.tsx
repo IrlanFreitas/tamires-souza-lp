@@ -1,12 +1,44 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./hero.module.scss";
-import "../../../styles/globals.scss";
+// import "../../../styles/globals.scss";
+import { useGSAPWithRef } from "@/hooks/useGSAP";
 
 export function HeroSection() {
+  // Ordem de animação:
+  // Primeiro, botão, imagem(imageContainer) e titulo, header
+  // Segundo, oferecendo soluções
+  // Terceiro, lista
+
+  const { ref } = useGSAPWithRef<HTMLElement>((gsap) => {
+    const tl = gsap.timeline({ delay: 0.3 });
+
+    tl?.from([styles.title,".imagem",".ctaPrimary"], {
+      opacity: 0,
+      y: 60,
+      duration: 1,
+      lazy:false,
+      ease: "expo.out",
+    })
+      .from(
+        ".subtitle",
+        { opacity: 0, y: 30, duration: 0.8, ease: "power3.out" },
+        "-=0.5"
+      )
+      // .from(".hero-hint", { opacity: 0, x: -20, duration: 0.6 }, "-=0.4")
+      // .from(".hero-tag", { opacity: 0, y: -10, duration: 0.5 }, "-=0.8")
+      .from(
+        ".solutionsList",
+        { opacity: 0, x: 80, duration: 1.2, ease: "expo.out" },
+        "-=1.2"
+      );
+  }, []);
+
   return (
-    <section className={styles.hero} id="/">
+    <section ref={ref} className={styles.hero} id="/">
       <div className={styles.container}>
-        <div className={`animeLeft ${styles.content}`}>
+        <div className={styles.content}>
           <h1 className={styles.title}>
             Tamires Souza <br />
             Consultora de Marketing para Hospitais e Indústria Farmacêutica
@@ -22,6 +54,7 @@ export function HeroSection() {
                 width={20}
                 height={20}
                 quality={100}
+                className="imagem"
               />
               Definição de posicionamento
             </li>
@@ -80,7 +113,7 @@ export function HeroSection() {
           </button>
         </div>
 
-        <div className={`animeRight ${styles.imageContainer}`}>
+        <div className={styles.imageContainer}>
           <Image
             src="/images/perfil.jpeg"
             alt="Tamires Souza"

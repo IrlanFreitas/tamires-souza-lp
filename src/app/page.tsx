@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/common/Header/header";
 import { HeroSection } from "@/components/sections/Hero/hero";
 import ResultsSection from "@/components/sections/Results/results";
@@ -8,8 +10,12 @@ import TestimonialsSection from "@/components/sections/Testimonials/testimonials
 import PresentationsSection from "@/components/sections/Presentations/presentations";
 import FaqSection from "@/components/sections/FAQ/faq";
 import Footer from "@/components/common/Footer/footer";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Page() {
+  gsap.registerPlugin(ScrollTrigger);
+
   return (
     <>
       <Header />

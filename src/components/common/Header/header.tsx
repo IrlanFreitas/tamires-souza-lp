@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 
 import "../../../styles/globals.scss";
 import styles from "./header.module.scss";
@@ -12,6 +12,9 @@ const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const mobile = useMedia("(max-width: 48rem)");
+
+  // useEffect(() => {
+  // }, []);
 
   return (
     <>

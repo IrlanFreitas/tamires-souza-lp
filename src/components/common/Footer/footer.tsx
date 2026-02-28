@@ -50,7 +50,17 @@ const Footer = () => {
         </div>
 
         <div className={styles.midias}>
-          <Link href="https://www.linkedin.com/in/souza-tamires/">
+          <Link href="https://www.instagram.com/soutamis" target="_blank">
+            <Image
+              src="/images/logos/instagram-branco.svg"
+              alt="Instagram logo"
+              width={25}
+              height={25}
+              priority
+              quality={100}
+            />
+          </Link>
+          <Link href="https://www.linkedin.com/in/souza-tamires/" target="_blank">
             <Image
               src="/images/logos/linkedin-branco.svg"
               alt="Linkedin logo"
@@ -59,7 +69,10 @@ const Footer = () => {
             />
           </Link>
 
-          <Link href="https://api.whatsapp.com/send/?phone=%2B5511967846989&text=Quero+contratar+a+palestra%2Ftreinamento+para+minha+empresa.&type=phone_number&app_absent=0">
+          <Link
+            href="https://api.whatsapp.com/send/?phone=%2B5511967846989&text=Quero+contratar+a+palestra%2Ftreinamento+para+minha+empresa.&type=phone_number&app_absent=0"
+            target="_blank"
+          >
             <Image
               src="/images/logos/whatsapp-branco.svg"
               alt="WhatsApp logo"

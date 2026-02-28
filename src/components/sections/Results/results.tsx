@@ -10,7 +10,7 @@ const companies = [
   { name: "Benegrip", src: "/images/empresas/benegrip-logo.png" },
   { name: "Tamarine", src: "/images/empresas/tamarine-logo.png" },
 ];
-const allCards = [...companies, ...companies, ...companies];
+const allCards = [...companies, ...companies, ...companies, ...companies];
 
 const ResultsSection = () => {
   const row1 = allCards;
@@ -25,6 +25,8 @@ const ResultsSection = () => {
     ...companies.slice(6),
     ...companies.slice(0, 6),
   ];
+
+  console.log(row1.length, row2.length)
 
   return (
     <>

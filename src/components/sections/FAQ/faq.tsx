@@ -66,7 +66,6 @@ const FaqSection = () => {
         <span className={styles.header}>
           <h2 className={styles.titulo}>Perguntas frequentes</h2>
           <hr className={styles.linha} />
-          <h3 className={styles.subTitulo}>Consultoria & Mentoria VITAL</h3>
         </span>
 
         <div className={styles.perguntas}>
@@ -75,7 +74,8 @@ const FaqSection = () => {
               <button
                 onClick={() => toggleAccordion(index)}
                 style={{
-                  backgroundColor: openIndex === index ? "#f0f0f0" : "#D8D6D6",
+                  backgroundColor: openIndex === index ? "#D8D6D6": "#f0f0f0" ,
+                  color: openIndex === index ? "#212D4F" : "#013E7F",
                 }}
                 className={styles.resposta}
               >

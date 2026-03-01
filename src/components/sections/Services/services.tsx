@@ -91,10 +91,10 @@ const contentCard = ({ src, descricao, list, cta }: ContentCard) => {
         width={100}
         height={100}
         quality={100}
-        className={styles.imagem}
+        className={`animeLeft ${styles.imagem}`}
       />
-      <p className={styles.descricao}>{descricao}</p>
-      <ul className={styles.bulletList}>
+      <p className={`animeRight ${styles.descricao}`}>{descricao}</p>
+      <ul className={`animeRight ${styles.bulletList}`}>
         {list.map((item) => (
           <li className={styles.item} key={item}>
             <Image
@@ -109,7 +109,7 @@ const contentCard = ({ src, descricao, list, cta }: ContentCard) => {
         ))}
       </ul>
       <a
-        className={styles.cta}
+        className={`animeRight ${styles.cta}`}
         href="https://api.whatsapp.com/send/?phone=%2B5511967846989&text=Quero+contratar+a+palestra%2Ftreinamento+para+minha+empresa.&type=phone_number&app_absent=0"
         target="_blank"
         rel="noopener noreferrer"

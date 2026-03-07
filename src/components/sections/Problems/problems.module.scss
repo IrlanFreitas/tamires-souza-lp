@@ -85,10 +85,13 @@
     align-items: center;
     justify-content: center;
     margin: auto;
+    transition: .3;
+    cursor: pointer;
 
     &:hover {
       color: var(--laranja);
       background-color: white;
+      border: 3px solid var(--laranja);
     }
 
     @media (max-width: 768px) {

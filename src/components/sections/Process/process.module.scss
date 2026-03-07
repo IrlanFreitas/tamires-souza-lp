@@ -7,6 +7,29 @@
   font-family: var(--fontCorpo);
   color: var(--branco);
 
+  .item {
+    margin-bottom: 48px;
+    padding: 32px;
+    border-radius: 20px;
+    background-color: var(--card-bg);
+    color: var(--azul);
+    box-shadow: 5px 5px 10px 0px #00000053;
+    transition: .5s;
+
+    &:hover {
+      transform: scale(110%);
+    }
+  }
+
+  .iconItem {
+    width: 28px;
+  }
+
+  .item:nth-child(odd) {
+    background-color: #013E7F;
+    color: var(--branco);
+  }
+
   .linha {
     max-width: 350px;
     margin: 0 auto;
@@ -47,12 +70,11 @@
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
 
   .numeroItem {
-    color: var(--laranja);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: var(--fontTitulos);
   }
 
@@ -70,7 +92,7 @@
   .resultados {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(5, 16%);
+    grid-template-columns: repeat(5, 15%);
     justify-content: center;
     gap: 20px;
 
@@ -84,6 +106,7 @@
   .resultadoIcon {
     align-self: center;
     justify-self: center;
+    width: 75px;
 
     @media (max-width: 48rem) {
       width: 100px;

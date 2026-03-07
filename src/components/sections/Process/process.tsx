@@ -3,34 +3,34 @@ import Image from "next/image";
 
 const metodoList = [
   {
-    titulo: "Diagnóstico estratégico",
+    titulo: "Diagnóstico de Precisão",
     iconName: "monitor_heart_branco",
     descricao:
-      "Inicio com um diagnóstico profundo para identificar ruídos, desalinhamentos e lacunas de clareza na comunicação entre liderança, áreas e equipes.",
+      "Identificação profunda de ruídos, lacunas de clareza e desalinhamentos entre a diretoria e as equipes operacionais.",
   },
   {
-    titulo: "Aplicação do Protocolo VITAL",
-    iconName: "checklist_branco",
+    titulo: "Aplicação do Protocolo VITAL™",
+    iconName: "checklist_azul",
     descricao:
-      "A partir do diagnóstico, aplico o Protocolo VITAL para estruturar  a visão, organizar mensagens e definir diretrizes claras de comunicação e decisão.",
+      "Estruturação da visão e definição de diretrizes claras de comunicação e decisão para organizar a casa.",
   },
   {
     titulo: "⁠Clareza executiva",
     iconName: "backlight_high_branco",
     descricao:
-      "Trabalho diretamente com líderes para traduzir estratégia em mensagens claras, compreensíveis e coerentes com os objetivos institucionais.",
+      "Trabalho direto com o líder para traduzir a estratégia em mensagens coerentes com os objetivos do negócio.",
   },
   {
-    titulo: "⁠Alinhamento entre áreas",
-    iconName: "align_horizontal_center_branco",
+    titulo: "Sincronia de Áreas",
+    iconName: "align_horizontal_center_azul",
     descricao:
-      "Conduzo o alinhamento entre diretoria, área médica, marketing e demais equipes, garantindo que todos comuniquem com a mesma linguagem e direção.",
+      "Alinhamento entre diretoria, corpo clínico e recepção, garantindo que todos falem a mesma linguagem.",
   },
   {
-    titulo: "Sustentação estratégica",
+    titulo: "Sustentação e Escala",
     iconName: "chess_king_branco",
     descricao:
-      "O resultado é uma comunicação institucional fortalecida, decisões mais seguras e o reposicionamento do marketing e da comunicação como ativos estratégicos da organização.",
+      "Consolidação de uma operação autogerenciável, onde o marketing e a comunicação tornam-se ativos estratégicos de lucro.",
   },
 ];
 
@@ -90,11 +90,11 @@ const ProcessSection = () => {
             width={20}
             height={20}
             quality={100}
+            className={styles.iconItem}
           />
           ⁠<h3 className={styles.tituloItem}>{titulo}</h3>
         </div>
         <p className={styles.descricaoItem}>{descricao}</p>
-        <hr className={styles.linhaItem} />
       </div>
     );
   };

@@ -79,6 +79,15 @@
     margin-top: 27px;
     font-size: 1.2rem;
     font-family: var(--fontTitulos);
+    box-shadow: 5px 5px 10px 0px #00000053;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--laranja);
+      background-color: white;
+      border: 3px solid var(--laranja);
+    }
 
     @media (max-width: 768px) {
       width: 400px;

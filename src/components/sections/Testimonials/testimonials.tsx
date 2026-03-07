@@ -21,7 +21,7 @@ const testimonials = [
     role: "Product Lead, Hypera Pharma",
     avatar: "AP",
     quote:
-      "Conheço a Tami há cerca de 5 anos, período em que trabalhamos juntas em projetos incríveis na Hypera Pharma. Em 2020, tivemos a oportunidade de reformular o blog de Buscopan, projeto que se tornou um verdadeiro case de sucesso dentro da companhia. Atualmente, a marca ocupa a segunda posição entre os sites mais acessados do portfólio, com crescimentos expressivos e consistentes.",
+      "Conheço a Tami há cerca de 5 anos, período em que trabalhamos juntas em projetos incríveis na Hypera Pharma. Em 2020, tivemos a oportunidade de reformular o blog de Buscopan, projeto que se tornou um verdadeiro case de sucesso dentro da companhia. Desde 2023, trabalhamos juntas com Buscopan, Neosaldina e Benegrip. Ao longo de todo esse tempo, a Tami sempre se destacou pelo alto nível de engajamento, visão estratégica e capacidade de execução. É uma profissional extremamente resolutiva, colaborativa e orientada a resultados, que assume desafios com protagonismo e entrega acima do esperado. Tenho total confiança em seu potencial e recomendo a Tami para projetos na área.",
     rating: 5,
     company: "Hypera Pharma",
   },
@@ -34,6 +34,26 @@ const testimonials = [
       "Trabalhei com a Tamires em projetos para marcas OTC relevantes, como Benegrip, dentro de uma grande empresa farmacêutica. Seu trabalho se destacou pela visão estratégica, domínio técnico e excelente atendimento ao time de marketing, sempre com foco em resultados e presença no dia a dia. Tenho total confiança no seu trabalho, entregando estratégias digitais sólidas e eficientes.",
     rating: 5,
     company: "Benegrip",
+  },
+    {
+    id: 4,
+    name: "Julia Santos Moreira",
+    role: "Gerente de Produtos, Buscopan",
+    avatar: "JM",
+    quote:
+      "Trabalhar com a Tamires foi uma experiência extremamente positiva. Desde o início, ela demonstrou um entendimento muito claro do mercado farmacêutico, especialmente no projeto da Buscopan e das demais marcas do grupo. O atendimento dela sempre foi um grande diferencial: organizado, ágil, próximo e estratégico. Ela não apenas executa, mas realmente pensa junto, propõe soluções e constrói caminhos para fortalecer a presença digital da marca de forma consistente e alinhada aos objetivos do negócio.",
+    rating: 5,
+    company: "Buscopan",
+  },
+    {
+    id: 3,
+    name: "Caio Assunção",
+    role: "Especialista e Estrategista em SEO, Hypera",
+    avatar: "CA",
+    quote:
+      "Trabalhei com a Tamires em várias oportunidades durante a parceria com a Hypera. Começando por Benegrip, alcançamos resultados excelentes, batendo recordes de +1 milhão de acessos orgânicos na página. Isso reflete sua capacidade estratégica, foco em execução e orientação a resultados. Também atuamos juntos em outras marcas icônicas, como Nebacetin, Epocler e Neosaldina, onde aumentamos o trafégo do site e conversão dos produtos. É uma profissional em quem confio e que recomendo com segurança para projetos na área.",
+    rating: 5,
+    company: "Hypera",
   },
 ];
 
@@ -168,7 +188,12 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
-        <button className={styles.botao}>
+        <a
+          className={styles.botao}
+          href="https://wa.me/+5511967846989?text=Estou%20com%20d%C3%BAvidas%20em%20qual%20servi%C3%A7o%20escolher%2C%20pode%20me%20ajudar?"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Saiba mais
           <Image
             src="/images/logos/whatsapp-branco.svg"
@@ -177,7 +202,7 @@ const TestimonialsSection = () => {
             height={20}
             quality={100}
           />
-        </button>
+        </a>
       </div>
     </section>
   );

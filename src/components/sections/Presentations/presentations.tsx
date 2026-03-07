@@ -45,40 +45,28 @@ const presentations = () => {
           <hr className={styles.linha} />
           <div>
             <p className={styles.paragrafo}>
-              Tamires Souza é{" "}
-              <strong>
-                {" "}
-                consultora de marketing especializada no setor da saúde
-              </strong>
-              , atendendo hospitais, clínicas, profissionais, indústria
-              farmacêutica e healthtechs.
+              Publicitária, especialista em marketing e estrategista, Tamires
+              Souza é a criadora do <strong>Protocolo VITAL™</strong> ,
+              metodologia desenvolvida para transformar a complexidade da gestão
+              em operações autogerenciáveis e lucrativas. Com sólida experiência
+              no setor da saúde, atua junto a hospitais, clínicas de alto
+              padrão, healthtechs e gigantes da indústria farmacêutica.
             </p>
             <p className={styles.paragrafo}>
-              Atua com{" "}
-              <strong>
-                {" "}
-                consultoria estratégica e mentorias focadas em comunicação
-                ética, posicionamento, branding e construção de autoridade.
-              </strong>{" "}
-              Desenvolve soluções personalizadas que vão do diagnóstico de
-              marketing ao planejamento de conteúdo, sempre alinhadas às
-              exigências regulatórias e institucionais de cada cliente.
+              Sua especialidade é a construção de soberania digital e
+              operacional. Através de consultorias estratégicas e mentorias de
+              elite, Tamires integra comunicação ética, branding de luxo e o {" "}
+              <strong>Cérebro Digital</strong> para libertar o médico do caos operacional. Suas
+              soluções são desenhadas sob medida para quem busca não apenas
+              presença digital, mas o domínio de sua categoria através da
+              integração entre autoridade institucional e inteligência
+              artificial.
             </p>
             <p className={styles.paragrafo}>
-              Seu diferencial está na{" "}
-              <strong>
-                integração entre estratégia de marketing, ética médica e
-                autoridade institucional
-              </strong>
-              , ajudando empresas e profissionais a se destacarem de forma
-              responsável em buscadores, IA e canais digitais.
-            </p>
-            <p className={styles.paragrafo}>
-              Realiza atendimentos <strong>presenciais</strong> e{" "}
-              <strong>online</strong>, com foco em{" "}
-              <strong>Bragança Paulista e interior de São Paulo,</strong>{" "}
-              mediante agendamento. Aceita Pix, cartões, boleto e crédito
-              recorrente.
+              Com base em Bragança Paulista e atendendo a grandes polos de São
+              Paulo, Tamires Souza é a escolha de líderes que não aceitam nada
+              menos que a excelência técnica e a segurança de uma governança
+              blindada.
             </p>
           </div>
         </div>

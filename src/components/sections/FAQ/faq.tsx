@@ -4,7 +4,7 @@ import styles from "./faq.module.scss";
 
 const items = [
   {
-    title: "ESTE trabalho VAI substituir minha agência de marketing?",
+    title: "Este trabalho vai substituir minha agência de marketing? ",
     content:
       "Definitivamente não. Eu entro onde as agências param: na conversão interna. Eu garanto que o investimento que você já faz não seja desperdiçado por falta de processos na sua recepção ou falhas na sua liderança.",
   },
@@ -43,13 +43,8 @@ const items = [
       Quando isso existe, qualquer ação de marketing ou comunicação passa a funcionar melhor com menos esforço e menos desperdício.`,
   },
   {
-    title: "Para que tipo de instituição esse trabalho é indicado?",
-    content: `Para hospitais, clínicas e indústrias farmacêuticas que já possuem estrutura, equipes e investimentos em comunicação, mas enfrentam desafios como:
-    mensagens desencontradas entre áreas
-    dificuldade de alinhamento entre liderança e times
-    ruído na comunicação institucional
-    decisões de marketing sem clareza estratégica
-    Esse trabalho é indicado para quem entende que comunicação é uma ferramenta de liderança e governança, não apenas divulgação.`,
+    title: "Para quem é a Consultoria/Mentoria Vital?",
+    content: `É para os médicos e gestores de saúde que querem transformar sua clínica ou hospital em uma mina de lucro e liberdade. Para quem deseja inspirar sua equipe e ser reconhecido como uma autoridade além do consultório. Para quem está no "caos operacional" e para quem já fatura bem, mas sente que o conhecimento da clínica ainda depende 100% de pessoas e não de processos.`,
   },
 ];
 

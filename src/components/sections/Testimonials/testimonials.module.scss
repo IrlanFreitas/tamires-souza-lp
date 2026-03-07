@@ -106,11 +106,14 @@
 }
 
 .sliderWrapper {
-  width: 100%;
-  max-width: 900px;
+  width: 85%;
   padding: 40px 20px;
   margin: auto;
 
+  @media (max-width: 425px) {
+    width: 100%;
+    padding: 40px 0;
+  }
 }
 
 .sliderCard {

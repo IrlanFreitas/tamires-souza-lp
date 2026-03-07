@@ -52,7 +52,7 @@ const contentTabs: TabCard[] = [
   {
     tab: "tab3",
     content: {
-      src: "/images/services/coruja-mentoria-vital.png",
+      src: "/images/services/protocolo_vital.png",
       descricao:
         "Acompanhamento premium para transformar a clínica em um negócio autogerenciável. Une estratégia, treinamento da equipe e implementação do Protocolo VITAL.",
       list: [

@@ -68,7 +68,7 @@
   .ctaPrimary {
     background: var(--laranja);
     color: var(--branco);
-    width: 300px;
+    width: 340px;
     height: 80px;
     border: none;
     border-radius: 20px;
@@ -76,8 +76,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 50px;
-    font-size: 1.3rem;
+    margin-top: 27px;
+    font-size: 1.2rem;
     font-family: var(--fontTitulos);
 
     @media (max-width: 768px) {

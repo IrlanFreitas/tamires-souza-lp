@@ -1,4 +1,3 @@
-
 import styles from "./results.module.scss";
 import Image from "next/image";
 
@@ -9,8 +8,20 @@ const companies = [
   { name: "Mantercorp", src: "/images/empresas/mantercorp-logo.png" },
   { name: "Benegrip", src: "/images/empresas/benegrip-logo.png" },
   { name: "Tamarine", src: "/images/empresas/tamarine-logo.png" },
+  {
+    name: "Dr Denise Leite",
+    src: "/images/empresas/dra-denise-leite-logo.png",
+  },
+  { name: "Dr Paulo", src: "/images/empresas/dr-paulo-logo.png" },
 ];
-const allCards = [...companies, ...companies, ...companies, ...companies,...companies, ...companies];
+const allCards = [
+  ...companies,
+  ...companies,
+  ...companies,
+  ...companies,
+  ...companies,
+  ...companies,
+];
 
 const ResultsSection = () => {
   const row1 = allCards;
@@ -64,8 +75,17 @@ const ResultsSection = () => {
               clínicas
             </div>
             <div className={styles.indicador}>
-              <span className={styles.numero}>10</span>
-              farmacêutica
+              <span className={styles.numero}>
+                10{" "}
+                <Image
+                  src="/images/logos/plus-solid-orange.svg"
+                  alt="Icone de Whatsapp"
+                  width={40}
+                  height={40}
+                  quality={100}
+                />
+              </span>
+              marcas farmacêuticas
             </div>
             <div className={styles.indicador}>
               <span className={styles.numero}>

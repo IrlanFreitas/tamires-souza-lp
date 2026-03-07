@@ -7,31 +7,11 @@ const ProblemsSection = () => {
     <section className={styles.problems}>
       <div className={styles.container}>
         <h2 className={styles.titulo}>
-          Por que muitas instituições da saúde <br />
-          <strong> não conseguem bons resultados</strong> em <br />
-          marketing?
+          Por que a sua clínica ainda não é <strong>Autogerenciável</strong>?
         </h2>
         <hr className={styles.linha} />
         <div className={styles.content}>
           <div>
-            <div className={styles.sessao}>
-              <span className={styles.tituloSessao}>
-                <Image
-                  src="/images/logos/text_snippet.svg"
-                  alt="Icone de Whatsapp"
-                  width={30}
-                  height={30}
-                  quality={100}
-                />
-                <h3>Em resumo</h3>
-              </span>
-              <p>
-                Porque operam sem um diagnóstico estruturado. Em vez de decisões
-                guiadas por clareza estratégica, o marketing é conduzido por
-                suposições, interpretações isoladas e percepções fragmentadas
-                entre áreas.
-              </p>
-            </div>
             <div className={styles.sessao}>
               <span className={styles.tituloSessao}>
                 <Image
@@ -41,21 +21,53 @@ const ProblemsSection = () => {
                   height={30}
                   quality={100}
                 />
-                <h3>Diagnóstico</h3>
+                <h3>Diagnóstico do Caos Operacional</h3>
               </span>
-              <p>
-                Na ausência de um diagnóstico estruturado, as organizações
-                passam a operar com suposições, interpretações individuais e
-                percepções fragmentadas entre áreas. Cada time entende a
-                estratégia de uma forma diferente, o que gera desalinhamento,
-                ruído na comunicação e decisões desconectadas dos objetivos
-                institucionais.
-              </p>
-              <p>
-                ⁠A ausência de direção clara faz com que exista muita execução,
-                mas pouca coerência. O problema não é a falta de ação, é o
-                excesso de ação sem alinhamento e sem liderança na comunicação.
-              </p>
+              <ul className={styles.problemsList}>
+                <li>
+                  <Image
+                    src="/images/logos/frag_management.svg"
+                    alt="Icone de problemas de gestão"
+                    width={30}
+                    height={30}
+                    quality={100}
+                  />
+                  <span>
+                    <strong>Gestão Fragmentada:</strong> Sem um diagnóstico
+                    estruturado, a clínica opera por suposições, gerando
+                    decisões desconectadas e ruídos de comunicação entre as
+                    áreas.
+                  </span>
+                </li>
+                <li>
+                  <Image
+                    src="/images/logos/no_direction.svg"
+                    alt="Icone de problemas de direcionamento"
+                    width={30}
+                    height={30}
+                    quality={100}
+                  />
+                  <span>
+                    <strong>Execução sem Direção:</strong> Excesso de tarefas
+                    manuais e falta de liderança estratégica, resultando em uma
+                    equipe que "apaga fogos" em vez de perseguir metas.
+                  </span>
+                </li>
+                <li>
+                  <Image
+                    src="/images/logos/dependence.svg"
+                    alt="Icone de problemas de dependência"
+                    width={30}
+                    height={30}
+                    quality={100}
+                  />
+                  <span>
+                    <strong>Dependência do Médico:</strong> A ausência de
+                    processos centralizados faz com que a operação pare sempre
+                    que o médico se ausenta.
+                  </span>
+                </li>
+              </ul>
             </div>
           </div>
           <Image
@@ -75,7 +87,7 @@ const ProblemsSection = () => {
                 height={30}
                 quality={100}
               />
-              <h3>Principais problemas</h3>
+              <h3>Principais Sintomas</h3>
             </span>
 
             <ul className={styles.problemsList}>
@@ -133,6 +145,15 @@ const ProblemsSection = () => {
             </ul>
           </div>
         </div>
+
+        <a
+          className={styles.cta}
+          href="https://wa.me/+5511967846989?text=Quero%20contratar%20um%20servico"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Desejo fazer o Raio-X da minha operação agora
+        </a>
         <div className={styles.rodape}>
           Sem clareza, o marketing executa. <br />
           Sem alinhamento, as áreas se contradizem. <br />E sem liderança na

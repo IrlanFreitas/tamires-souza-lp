@@ -41,10 +41,10 @@ const contentTabs: TabCard[] = [
         "Intervenção pontual para destravar gargalos operacionais e organizar o crescimento da clínica ou hospital. Foco em decisões claras, geração de caixa e execução acompanhada.",
       list: [
         "Diagnóstico operacional e comercial",
-        "Definição de prioridades estratégicas",
-        "Reuniões de alinhamento",
-        "Plano de ação executável",
-        "Acompanhamento das melhorias",
+        "Blindagem Operacional",
+        "Cérebro Digital da Clínica",
+        "Governança & Sucessão",
+        "Rituais de Celebração",
       ],
       cta: "Quero organizar o crescimento",
     },
@@ -60,7 +60,7 @@ const contentTabs: TabCard[] = [
         "Treinamento direto do time",
         "Rituais de gestão e indicadores",
         "Implementação dos 15 Minutos Estratégicos",
-        "Suporte contínuo à tomada de decisão",
+        "Acelerador Comercial",
       ],
       cta: "Quero ser mentorado",
     },
@@ -110,7 +110,7 @@ const contentCard = ({ src, descricao, list, cta }: ContentCard) => {
       </ul>
       <a
         className={`animeRight ${styles.cta}`}
-        href="https://api.whatsapp.com/send/?phone=%2B5511967846989&text=Quero+contratar+a+palestra%2Ftreinamento+para+minha+empresa.&type=phone_number&app_absent=0"
+        href="https://wa.me/+5511967846989?text=Quero%20contratar%20um%20servico"
         target="_blank"
         rel="noopener noreferrer"
       >

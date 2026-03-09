@@ -23,6 +23,10 @@
     min-height: 300px;
   }
 
+  .subtitle {
+    font-size: 1rem;
+  }
+
   .container {
     max-width: 1200px;
     margin: auto;
@@ -59,7 +63,7 @@
     }
 
     p {
-      font-size: clamp(16px, 2vw, 18px);
+      font-size: 1rem;
       line-height: 1.6;
       margin-bottom: 30px;
     }
@@ -135,6 +139,7 @@
   .solutionsList {
     color: var(--azul);
     list-style: none;
+    font-size: 1rem;
 
     & li {
       display: flex;

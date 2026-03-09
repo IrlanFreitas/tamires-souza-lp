@@ -99,7 +99,10 @@ const ProblemsSection = () => {
                   height={30}
                   quality={100}
                 />
-                Cada área entende a estratégia de forma diferente
+                <span>
+                  <strong>Vazamento de Lucro:</strong> Falta de controle sobre a
+                  jornada do paciente e falhas na conversão da recepção.
+                </span>
               </li>
               <li>
                 <Image
@@ -119,7 +122,10 @@ const ProblemsSection = () => {
                   height={30}
                   quality={100}
                 />
-                As áreas se contradizem e geram ruído na comunicação
+                <span>
+                  <strong>Cultura de Urgência:</strong> Gestão por grupos de
+                  WhatsApp que matam a produtividade e geram estresse na equipe.
+                </span>
               </li>
               <li>
                 {" "}
@@ -130,7 +136,11 @@ const ProblemsSection = () => {
                   height={30}
                   quality={100}
                 />
-                Decisões são tomadas de forma desconectada do todo
+                <span>
+                  <strong>Falta de Previsibilidade:</strong> Resultados
+                  inconsistentes devido à falta de indicadores claros (KPIs) e
+                  rituais de comando.
+                </span>
               </li>
               <li>
                 <Image
@@ -140,7 +150,11 @@ const ProblemsSection = () => {
                   height={30}
                   quality={100}
                 />
-                Os resultados se tornam inconsistentes e difíceis de sustentar
+                <span>
+                  <strong>Perda de Ativo:</strong> Se um funcionário sai, o
+                  conhecimento do cargo vai embora com ele por falta de
+                  documentação.
+                </span>
               </li>
             </ul>
           </div>

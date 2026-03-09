@@ -13,14 +13,16 @@ export default function Page() {
   return (
     <>
       <Header />
-      <HeroSection />
-      <ResultsSection />
-      <ServicesSection />
-      <ProblemsSection />
-      <ProcessSection />
-      <TestimonialsSection />
-      <PresentationsSection />
-      <FaqSection />
+      <main>
+        <HeroSection />
+        <ResultsSection />
+        <ServicesSection />
+        <ProblemsSection />
+        <ProcessSection />
+        <TestimonialsSection />
+        <PresentationsSection />
+        <FaqSection />
+      </main>
       <Footer />
     </>
   );

@@ -47,9 +47,9 @@ const testimonials = [
   },
     {
     id: 3,
-    name: "Caio Assunção",
-    role: "Especialista e Estrategista em SEO, Hypera",
-    avatar: "CA",
+    name: "Caio Gomes",
+    role: "Analista Senior, Hypera",
+    avatar: "CG",
     quote:
       "Trabalhei com a Tamires em várias oportunidades durante a parceria com a Hypera. Começando por Benegrip, alcançamos resultados excelentes, batendo recordes de +1 milhão de acessos orgânicos na página. Isso reflete sua capacidade estratégica, foco em execução e orientação a resultados. Também atuamos juntos em outras marcas icônicas, como Nebacetin, Epocler e Neosaldina, onde aumentamos o trafégo do site e conversão dos produtos. É uma profissional em quem confio e que recomendo com segurança para projetos na área.",
     rating: 5,

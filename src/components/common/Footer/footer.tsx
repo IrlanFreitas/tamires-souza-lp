@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <section className={styles.footer}>
+    <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <div className={styles.logoNome}>
@@ -34,7 +34,7 @@ const Footer = () => {
                 2026 Tamires Souza
                 <strong>
                   {" "}
-                  Consultora de Marketing para Hospitais e Indústria
+                  Consultora de Marketing para clínicas e Criadora do Protocolo VITAL™️
                 </strong>
               </p>
               <p>Farmacêutica Todos os direitos reservados</p>
@@ -70,7 +70,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://api.whatsapp.com/send/?phone=%2B5511967846989&text=Quero+contratar+a+palestra%2Ftreinamento+para+minha+empresa.&type=phone_number&app_absent=0"
+            href="https://wa.me/+5511967846989?text=Estou%20com%20d%C3%BAvidas%20em%20qual%20servi%C3%A7o%20escolher%2C%20pode%20me%20ajudar?"
             target="_blank"
           >
             <Image
@@ -91,7 +91,7 @@ const Footer = () => {
           hirlab
         </a>
       </div>
-    </section>
+    </footer>
   );
 };
 

@@ -14,11 +14,11 @@ const Header = () => {
   const mobile = useMedia("(max-width: 48rem)");
 
   return (
-    <>
+    <header>
       <nav className={`${styles.container}`}>
         <span className={styles.logo} id="#">
           <Image
-            src="/images/logos/LOGO-Tamires-Souza.svg"
+            src="/images/logos/LOGO_Coruja.svg"
             alt="Tamires Souza"
             width={25}
             height={25}
@@ -58,7 +58,10 @@ const Header = () => {
               quality={100}
             />
           </Link>
-          <Link href="https://www.linkedin.com/in/souza-tamires/" target="_blank">
+          <Link
+            href="https://www.linkedin.com/in/souza-tamires/"
+            target="_blank"
+          >
             <Image
               src="/images/logos/linkedin.svg"
               alt="Linkedin Icon"
@@ -69,7 +72,7 @@ const Header = () => {
             />
           </Link>
           <Link
-            href="https://api.whatsapp.com/send/?phone=%2B5511967846989&text=Quero+contratar+a+palestra%2Ftreinamento+para+minha+empresa.&type=phone_number&app_absent=0"
+            href="https://wa.me/+5511967846989?text=Estou%20com%20d%C3%BAvidas%20em%20qual%20servi%C3%A7o%20escolher%2C%20pode%20me%20ajudar?"
             target="_blank"
           >
             <Image
@@ -91,7 +94,7 @@ const Header = () => {
           ></button>
         )}
       </nav>
-    </>
+    </header>
   );
 };
 

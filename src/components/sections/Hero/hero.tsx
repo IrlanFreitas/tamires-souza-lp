@@ -12,8 +12,7 @@ export function HeroSection() {
             Consultora de Marketing para clínicas e Criadora do Protocolo VITAL™
           </h1>
           <p className={styles.subtitle}>
-            Consultora de Marketing para clínicas e Criadora do Protocolo
-            VITAL™"
+            Especialista em transformar clínicas caóticas em operações autogerenciáveis, devolvendo a liberdade ao médico através da gestão de elite.
             <br />
             Oferecendo soluções personalizadas como:
           </p>

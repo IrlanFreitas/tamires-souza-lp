@@ -37,7 +37,7 @@ const Footer = () => {
                   Consultora de Marketing para clínicas e Criadora do Protocolo VITAL™️
                 </strong>
               </p>
-              <p>Farmacêutica Todos os direitos reservados</p>
+              <p>Todos os direitos reservados</p>
             </span>
           </span>
 

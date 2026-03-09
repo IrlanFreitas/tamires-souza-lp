@@ -70,7 +70,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#ffffff" />
+        {/* <meta name="theme-color" content="#ffffff" /> */}
         <link rel="canonical" href="https://tamires-souza-lp.vercel.app" />
       </head>
       <body

@@ -71,7 +71,6 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#ffffff" />
-        <link rel="icon" href="/images/logos/LOGO_Coruja-branco.svg" />
         <link rel="canonical" href="https://tamires-souza-lp.vercel.app" />
       </head>
       <body

@@ -17,14 +17,6 @@ const Header = () => {
     <header>
       <nav className={`${styles.container}`}>
         <span className={styles.logo} id="#">
-          <Image
-            src="/images/logos/LOGO_Coruja.svg"
-            alt="Tamires Souza"
-            width={25}
-            height={25}
-            priority
-            quality={85}
-          />
           <Link href="/">
             <p>Tamires Souza</p>
           </Link>

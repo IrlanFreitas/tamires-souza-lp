@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./hero.module.scss";
 import "../../../styles/globals.scss";
 
-export function HeroSection() {
+const HeroSection = () => {
   return (
     <section className={styles.hero} id="/">
       <div className={styles.container}>
@@ -12,7 +12,9 @@ export function HeroSection() {
             Consultora de Marketing para clínicas e Criadora do Protocolo VITAL™
           </h1>
           <p className={styles.subtitle}>
-            Especialista em transformar clínicas caóticas em operações autogerenciáveis, devolvendo a liberdade ao médico através da gestão de elite.
+            Especialista em transformar clínicas caóticas em operações
+            autogerenciáveis, devolvendo a liberdade ao médico através da gestão
+            de elite.
             <br />
             Oferecendo soluções personalizadas como:
           </p>
@@ -85,7 +87,11 @@ export function HeroSection() {
             </li>
           </ul>
 
-          <a className={styles.ctaPrimary} target="_blank" href="https://wa.me/+5511967846989?text=Estou%20com%20d%C3%BAvidas%20em%20qual%20servi%C3%A7o%20escolher%2C%20pode%20me%20ajudar?">
+          <a
+            className={styles.ctaPrimary}
+            target="_blank"
+            href="https://wa.me/+5511967846989?text=Estou%20com%20d%C3%BAvidas%20em%20qual%20servi%C3%A7o%20escolher%2C%20pode%20me%20ajudar?"
+          >
             Quero diagnosticar minha clínica
           </a>
         </div>
@@ -103,4 +109,6 @@ export function HeroSection() {
       </div>
     </section>
   );
-}
+};
+
+export default HeroSection;

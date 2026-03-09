@@ -114,7 +114,7 @@ const TestimonialsSection = () => {
           <div
             className={`${styles.sliderCard} ${visible ? styles.fadeActive : styles.fadeEnter}`}
             role="region"
-            aria-label={`Testimonial ${current + 1} of ${testimonials.length}`}
+            aria-label={`Depoimento ${current + 1} de ${testimonials.length}`}
             aria-live="polite"
           >
             <div className={styles.cardAccent} />
@@ -124,7 +124,6 @@ const TestimonialsSection = () => {
 
             <div
               className={styles.cardStars}
-              aria-label={`${t.rating} out of 5 stars`}
             >
               {Array.from({ length: t.rating }).map((_, i) => (
                 <StarIcon key={i} />
@@ -150,7 +149,7 @@ const TestimonialsSection = () => {
             <div
               className={styles.sliderDots}
               role="tablist"
-              aria-label="Testimonial navigation"
+              aria-label="Navegação de depoimentos"
             >
               {testimonials.map((_, i) => (
                 <button
@@ -159,7 +158,7 @@ const TestimonialsSection = () => {
                   onClick={() => goTo(i)}
                   role="tab"
                   aria-selected={i === current}
-                  aria-label={`Go to testimonial ${i + 1}`}
+                  aria-label={`Ir para depoimento: ${i + 1}`}
                 />
               ))}
             </div>
@@ -173,14 +172,14 @@ const TestimonialsSection = () => {
               <button
                 className={styles.navBtn}
                 onClick={prev}
-                aria-label="Previous testimonial"
+                aria-label="Depoimento anterior"
               >
                 ←
               </button>
               <button
                 className={styles.navBtn}
                 onClick={next}
-                aria-label="Next testimonial"
+                aria-label="Proximo depoimento"
               >
                 →
               </button>

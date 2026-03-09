@@ -18,7 +18,7 @@ const Header = () => {
       <nav className={`${styles.container}`}>
         <span className={styles.logo} id="#">
           <Link href="/">
-            <p>Tamires Souza</p>
+            Tamires Souza
           </Link>
         </span>
 

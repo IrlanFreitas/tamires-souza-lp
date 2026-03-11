@@ -57,7 +57,8 @@ const ResultsSection = () => {
           </section>
 
           <hr className={styles.linha} />
-          <div className={styles.numeros}>
+          <div className={styles.numerosContainer}>
+            <div className={styles.numeros}>
             <div className={styles.indicador}>
               <span className={styles.numero}>4</span> hospitais
             </div>
@@ -99,6 +100,7 @@ const ResultsSection = () => {
                 />
               </span>
               profissionais de saúde
+            </div>
             </div>
           </div>
         </div>

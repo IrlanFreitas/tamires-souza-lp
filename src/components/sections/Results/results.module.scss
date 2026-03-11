@@ -96,14 +96,19 @@
 
   }
 
+  .numerosContainer {
+    width: 80%;
+    margin: auto;
+    padding-top: 32px;
+  }
+
   .numeros {
     max-width: 1200px;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     font-size: 1.3rem;
-    align-items: center;
+    align-items: start;
     font-family: var(--fontTitulos);
-    padding-top: 80px;
     width: 80%;
     margin: auto;
 
@@ -111,12 +116,13 @@
       font-size: 1.1rem;
       align-items: start;
       align-content: start;
+      width: 100%;
     }
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 50%);
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       gap: 10px;
     }
   }

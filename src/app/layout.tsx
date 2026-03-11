@@ -39,13 +39,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://tamires-souza-lp.vercel.app",
+    url: "https://tamiresmarketing.com/",
     title: "Tamires Souza | Especialista em Marketing de Saúde",
     description:
       "Estratégias de marketing digital para profissionais e clínicas de saúde.",
     images: [
       {
-        url: "https://tamires-souza-lp.vercel.app/images/og-image.png",
+        url: "https://tamiresmarketing.com/images/og-image.png",
         width: 1200,
         height: 630,
         alt: "Tamires Souza",
@@ -70,8 +70,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <meta name="theme-color" content="#ffffff" /> */}
-        <link rel="canonical" href="https://tamires-souza-lp.vercel.app" />
+        <link rel="canonical" href="https://tamiresmarketing.com/" />
       </head>
       <body
         className={`${openSans.variable} ${merriweather.variable} ${bebas.variable}`}

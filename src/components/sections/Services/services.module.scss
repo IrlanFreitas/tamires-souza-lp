@@ -1,5 +1,5 @@
 .services {
-  min-height: 100vh;
+  min-height: 110vh;
   width: 100%;
   color: var(--azul);
   display: flex;
@@ -12,8 +12,6 @@
   @media (max-width: 1024px) {
     min-height: 120vh;
   }
-
-
 
   .container {
     max-width: 1200px;
@@ -120,8 +118,6 @@
 
     ul.nav li:nth-child(2) {
       border-radius: 0;
-      // border-bottom-right-radius: 2rem;
-      // border-top-right-radius: 2rem;
     }
 
     ul.nav li:hover {

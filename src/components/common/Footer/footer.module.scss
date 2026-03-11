@@ -32,7 +32,8 @@
 
     @media (max-width: 48rem) {
       flex-direction: column;
-      gap: 50px;
+      gap: 32px;
+      width: 90%;
       align-items: center;
     }
   }
@@ -110,5 +111,6 @@
     bottom: 0;
     left: 50%;
     right: 50%;
+    padding-bottom: 12px;
   }
 }

@@ -10,32 +10,32 @@ const presentations = () => {
           <Image
             src="/images/testimonials/tamires-01.png"
             alt="Icone divisor de conteúdo"
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             quality={100}
             className={styles.imagem}
           />
           <Image
             src="/images/testimonials/tamires-02.png"
             alt="Icone divisor de conteúdo"
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             quality={100}
             className={styles.imagem}
           />
           <Image
             src="/images/testimonials/tamires-03.png"
             alt="Icone divisor de conteúdo"
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             quality={100}
             className={styles.imagem}
           />
           <Image
             src="/images/testimonials/tamires-04.png"
             alt="Icone divisor de conteúdo"
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             quality={100}
             className={styles.imagem}
           />
